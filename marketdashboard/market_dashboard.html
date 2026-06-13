@@ -93,7 +93,7 @@
       gap: 16px;
       margin-bottom: 14px;
     }
-    .panel-header p { margin-bottom: 0; color: var(--muted); font-size: 13px; }
+    .panel-header p { margin-bottom: 0; color: var(--muted); font-size: 15px; }
     .callout {
       border-left: 4px solid var(--accent-2);
       background: #fff8eb;
@@ -109,7 +109,7 @@
       min-width: 72px;
       border-radius: 999px;
       padding: 4px 9px;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 750;
     }
     .badge.positive { background: var(--positive-soft); color: var(--positive); }
@@ -123,16 +123,18 @@
     .bar.negative { fill: var(--negative); }
     .chart-label, .chart-value, .dot-label, .tick, .axis-label {
       fill: #405063;
-      font-size: 13px;
       font-weight: 650;
     }
-    .chart-value { fill: #203040; }
+    .chart-label { font-size: 21px; font-weight: 800; }
+    .chart-value { fill: #203040; font-size: 20px; font-weight: 800; }
+    .dot-label { font-size: 17px; font-weight: 800; }
+    .tick, .axis-label { font-size: 17px; font-weight: 750; }
     .dot.positive { fill: var(--accent); stroke: white; stroke-width: 2; }
     .dot.negative { fill: var(--negative); stroke: white; stroke-width: 2; }
     .line { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
     .line.benchmark { stroke: #8a97a8; }
     .line.leader { stroke: var(--accent); }
-    .legend { display: flex; flex-wrap: wrap; gap: 12px; color: var(--muted); font-size: 13px; }
+    .legend { display: flex; flex-wrap: wrap; gap: 12px; color: var(--muted); font-size: 15px; }
     .legend span::before {
       content: "";
       display: inline-block;
@@ -144,10 +146,10 @@
       background: var(--accent);
     }
     .legend .benchmark::before { background: #8a97a8; }
-    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
     th {
       color: var(--muted);
-      font-size: 11px;
+      font-size: 12px;
       letter-spacing: 0.05em;
       text-align: left;
       text-transform: uppercase;
@@ -169,7 +171,7 @@
       .kpis, .grid.two { grid-template-columns: 1fr; }
       .panel { padding: 18px; }
       .panel-header { display: block; }
-      table { font-size: 12px; }
+      table { font-size: 13px; }
       th, td { padding: 9px 6px; }
     }
     </style>
@@ -202,41 +204,41 @@
             <p>Composite score using 20, 50, and 100 day relative strength versus SPY.</p>
           </div>
         </div>
-        <svg class="chart" viewBox="0 0 920 396" role="img" aria-label="RS Score bar chart">
-<line class="axis" x1="537.0" y1="18" x2="537.0" y2="378" />
-<text class="chart-label" x="0" y="47">Communication Services</text>
-<rect class="bar negative" x="347.1" y="34" width="189.9" height="18" rx="5" />
-<text class="chart-value" x="339.1" y="48" text-anchor="end">-0.08</text>
-<text class="chart-label" x="0" y="79">Utilities</text>
-<rect class="bar negative" x="366.8" y="66" width="170.2" height="18" rx="5" />
-<text class="chart-value" x="358.8" y="80" text-anchor="end">-0.08</text>
-<text class="chart-label" x="0" y="111">Consumer Discretionary</text>
-<rect class="bar negative" x="419.6" y="98" width="117.4" height="18" rx="5" />
-<text class="chart-value" x="411.6" y="112" text-anchor="end">-0.05</text>
-<text class="chart-label" x="0" y="143">Energy</text>
-<rect class="bar negative" x="446.2" y="130" width="90.8" height="18" rx="5" />
-<text class="chart-value" x="438.2" y="144" text-anchor="end">-0.04</text>
-<text class="chart-label" x="0" y="175">Healthcare</text>
-<rect class="bar negative" x="459.0" y="162" width="78.0" height="18" rx="5" />
-<text class="chart-value" x="451.0" y="176" text-anchor="end">-0.03</text>
-<text class="chart-label" x="0" y="207">Materials</text>
-<rect class="bar negative" x="460.1" y="194" width="76.9" height="18" rx="5" />
-<text class="chart-value" x="452.1" y="208" text-anchor="end">-0.03</text>
-<text class="chart-label" x="0" y="239">Consumer Staples</text>
-<rect class="bar negative" x="461.2" y="226" width="75.8" height="18" rx="5" />
-<text class="chart-value" x="453.2" y="240" text-anchor="end">-0.03</text>
-<text class="chart-label" x="0" y="271">Industrials</text>
-<rect class="bar negative" x="490.2" y="258" width="46.8" height="18" rx="5" />
-<text class="chart-value" x="482.2" y="272" text-anchor="end">-0.02</text>
-<text class="chart-label" x="0" y="303">Financials</text>
-<rect class="bar negative" x="491.3" y="290" width="45.7" height="18" rx="5" />
-<text class="chart-value" x="483.3" y="304" text-anchor="end">-0.02</text>
-<text class="chart-label" x="0" y="335">Real Estate</text>
-<rect class="bar positive" x="537.0" y="322" width="13.4" height="18" rx="5" />
-<text class="chart-value" x="558.4" y="336" text-anchor="start">+0.01</text>
-<text class="chart-label" x="0" y="367">Technology</text>
-<rect class="bar positive" x="537.0" y="354" width="327.0" height="18" rx="5" />
-<text class="chart-value" x="872.0" y="368" text-anchor="start">+0.15</text>
+        <svg class="chart" viewBox="0 0 900 484" role="img" aria-label="RS Score bar chart">
+<line class="axis" x1="572.0" y1="18" x2="572.0" y2="466" />
+<text class="chart-label" x="0" y="51">Communication Services</text>
+<rect class="bar negative" x="414.0" y="34" width="158.0" height="22" rx="6" />
+<text class="chart-value" x="406.0" y="51" text-anchor="end">-0.08</text>
+<text class="chart-label" x="0" y="91">Utilities</text>
+<rect class="bar negative" x="430.4" y="74" width="141.6" height="22" rx="6" />
+<text class="chart-value" x="422.4" y="91" text-anchor="end">-0.08</text>
+<text class="chart-label" x="0" y="131">Consumer Discretionary</text>
+<rect class="bar negative" x="474.4" y="114" width="97.6" height="22" rx="6" />
+<text class="chart-value" x="466.4" y="131" text-anchor="end">-0.05</text>
+<text class="chart-label" x="0" y="171">Energy</text>
+<rect class="bar negative" x="496.4" y="154" width="75.6" height="22" rx="6" />
+<text class="chart-value" x="488.4" y="171" text-anchor="end">-0.04</text>
+<text class="chart-label" x="0" y="211">Healthcare</text>
+<rect class="bar negative" x="507.1" y="194" width="64.9" height="22" rx="6" />
+<text class="chart-value" x="499.1" y="211" text-anchor="end">-0.03</text>
+<text class="chart-label" x="0" y="251">Materials</text>
+<rect class="bar negative" x="508.0" y="234" width="64.0" height="22" rx="6" />
+<text class="chart-value" x="500.0" y="251" text-anchor="end">-0.03</text>
+<text class="chart-label" x="0" y="291">Consumer Staples</text>
+<rect class="bar negative" x="508.9" y="274" width="63.1" height="22" rx="6" />
+<text class="chart-value" x="500.9" y="291" text-anchor="end">-0.03</text>
+<text class="chart-label" x="0" y="331">Industrials</text>
+<rect class="bar negative" x="533.1" y="314" width="38.9" height="22" rx="6" />
+<text class="chart-value" x="525.1" y="331" text-anchor="end">-0.02</text>
+<text class="chart-label" x="0" y="371">Financials</text>
+<rect class="bar negative" x="534.0" y="354" width="38.0" height="22" rx="6" />
+<text class="chart-value" x="526.0" y="371" text-anchor="end">-0.02</text>
+<text class="chart-label" x="0" y="411">Real Estate</text>
+<rect class="bar positive" x="572.0" y="394" width="11.2" height="22" rx="6" />
+<text class="chart-value" x="591.2" y="411" text-anchor="start">+0.01</text>
+<text class="chart-label" x="0" y="451">Technology</text>
+<rect class="bar positive" x="572.0" y="434" width="272.0" height="22" rx="6" />
+<text class="chart-value" x="852.0" y="451" text-anchor="start">+0.15</text>
 </svg>
       </div>
       <div class="panel">
@@ -312,26 +314,26 @@
             <p>Risk-on signals add points. Defensive leadership subtracts points.</p>
           </div>
         </div>
-        <svg class="chart" viewBox="0 0 920 236" role="img" aria-label="Risk Score bar chart">
-<line class="axis" x1="537.0" y1="18" x2="537.0" y2="218" />
-<text class="chart-label" x="0" y="47">Small Cap Risk Appetite</text>
-<rect class="bar positive" x="537.0" y="34" width="0.0" height="18" rx="5" />
-<text class="chart-value" x="545.0" y="48" text-anchor="start">+0.00</text>
-<text class="chart-label" x="0" y="79">Market Breadth</text>
-<rect class="bar positive" x="537.0" y="66" width="0.0" height="18" rx="5" />
-<text class="chart-value" x="545.0" y="80" text-anchor="start">+0.00</text>
-<text class="chart-label" x="0" y="111">Long Bonds vs Stocks</text>
-<rect class="bar positive" x="537.0" y="98" width="0.0" height="18" rx="5" />
-<text class="chart-value" x="545.0" y="112" text-anchor="start">+0.00</text>
-<text class="chart-label" x="0" y="143">Commodities vs Stocks</text>
-<rect class="bar positive" x="537.0" y="130" width="0.0" height="18" rx="5" />
-<text class="chart-value" x="545.0" y="144" text-anchor="start">+0.00</text>
-<text class="chart-label" x="0" y="175">Credit Risk Appetite</text>
-<rect class="bar positive" x="537.0" y="162" width="327.0" height="18" rx="5" />
-<text class="chart-value" x="872.0" y="176" text-anchor="start">+1.00</text>
-<text class="chart-label" x="0" y="207">Gold vs Stocks</text>
-<rect class="bar positive" x="537.0" y="194" width="327.0" height="18" rx="5" />
-<text class="chart-value" x="872.0" y="208" text-anchor="start">+1.00</text>
+        <svg class="chart" viewBox="0 0 900 284" role="img" aria-label="Risk Score bar chart">
+<line class="axis" x1="572.0" y1="18" x2="572.0" y2="266" />
+<text class="chart-label" x="0" y="51">Small Cap Risk Appetite</text>
+<rect class="bar positive" x="572.0" y="34" width="0.0" height="22" rx="6" />
+<text class="chart-value" x="580.0" y="51" text-anchor="start">+0.00</text>
+<text class="chart-label" x="0" y="91">Market Breadth</text>
+<rect class="bar positive" x="572.0" y="74" width="0.0" height="22" rx="6" />
+<text class="chart-value" x="580.0" y="91" text-anchor="start">+0.00</text>
+<text class="chart-label" x="0" y="131">Long Bonds vs Stocks</text>
+<rect class="bar positive" x="572.0" y="114" width="0.0" height="22" rx="6" />
+<text class="chart-value" x="580.0" y="131" text-anchor="start">+0.00</text>
+<text class="chart-label" x="0" y="171">Commodities vs Stocks</text>
+<rect class="bar positive" x="572.0" y="154" width="0.0" height="22" rx="6" />
+<text class="chart-value" x="580.0" y="171" text-anchor="start">+0.00</text>
+<text class="chart-label" x="0" y="211">Credit Risk Appetite</text>
+<rect class="bar positive" x="572.0" y="194" width="272.0" height="22" rx="6" />
+<text class="chart-value" x="852.0" y="211" text-anchor="start">+1.00</text>
+<text class="chart-label" x="0" y="251">Gold vs Stocks</text>
+<rect class="bar positive" x="572.0" y="234" width="272.0" height="22" rx="6" />
+<text class="chart-value" x="852.0" y="251" text-anchor="start">+1.00</text>
 </svg>
       </div>
     </section>
