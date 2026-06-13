@@ -1,0 +1,56 @@
+
+=== Market Regime + Leadership Dashboard ===
+As of: 2026-06-12
+Benchmark: SPY
+
+=== Equity Leadership ===
+ Rank                 Sector Ticker      Type        Status  RS Score  20D RS %  50D RS %  100D RS %  Dist MA50 %  20D Rank Change  50D Rank Change
+    1             Technology    XLK    Growth     Improving    0.1457      3.84     21.00      18.84         7.41                0                8
+    2            Real Estate   XLRE     Other       Neutral    0.0060      4.20     -2.15       0.48         0.57                3                4
+    3             Financials    XLF  Cyclical       Neutral   -0.0204      4.90     -4.69      -8.19         0.54                6                7
+    4            Industrials    XLI  Cyclical       Neutral   -0.0208      1.83     -5.35      -1.58        -0.49               -1                0
+    5       Consumer Staples    XLP Defensive       Neutral   -0.0338      1.86     -6.93      -4.54         0.11                1                0
+    6              Materials    XLB  Cyclical       Neutral   -0.0343      1.86     -8.65      -0.92        -0.91               -2               -4
+    7             Healthcare    XLV Defensive       Neutral   -0.0347      5.80     -8.03      -9.46         1.43                4                1
+    8                 Energy    XLE  Cyclical Deteriorating   -0.0405     -0.04    -13.79      10.86        -3.11               -6               -7
+    9 Consumer Discretionary    XLY  Cyclical Deteriorating   -0.0523     -0.89     -6.19     -10.65        -2.98               -2                2
+   10              Utilities    XLU Defensive       Neutral   -0.0758      0.03    -14.69      -4.91        -4.38                0               -7
+   11 Communication Services    XLC    Growth Deteriorating   -0.0846     -3.84    -11.34     -10.08        -5.75               -3               -4
+
+=== Leadership Summary ===
+Current leader: Technology (XLK)
+Runner-up: Real Estate (XLRE)
+Leadership strength: Dominant
+Leader gap vs #2: 0.1397
+Leadership regime: Leadership Intact
+Participation: Narrow Leadership
+Leader fading: False
+Challenger count: 0
+
+=== Regime Signals ===
+                 Signal   Ratio  Status  Risk Score  20D %  50D %  100D %  Dist MA50 %
+Small Cap Risk Appetite IWM/SPY Neutral           0   3.88   3.70    1.82         2.59
+         Market Breadth RSP/SPY Neutral           0   4.82  -2.90   -1.25         1.28
+   Credit Risk Appetite HYG/IEF Bullish           1   0.37   2.01    1.17         0.62
+   Long Bonds vs Stocks TLT/SPY Neutral           0   2.28 -11.49   -8.12        -2.17
+         Gold vs Stocks GLD/SPY Bearish           1  -8.74 -22.01  -19.46       -10.81
+  Commodities vs Stocks DBC/SPY Bearish           0  -7.55 -12.06   10.77        -7.15
+
+=== Regime Summary ===
+Risk regime: Risk-On
+Risk score: 2
+Defensive demand signals: 0/2
+Commodity / inflation pressure: False
+
+=== Challengers ===
+None
+
+=== Deteriorating Groups ===
+ Rank                 Sector Ticker     Type        Status  RS Score  20D RS %  50D RS %  Dist MA50 %
+    8                 Energy    XLE Cyclical Deteriorating   -0.0405     -0.04    -13.79        -3.11
+    9 Consumer Discretionary    XLY Cyclical Deteriorating   -0.0523     -0.89     -6.19        -2.98
+   11 Communication Services    XLC   Growth Deteriorating   -0.0846     -3.84    -11.34        -5.75
+
+=== Final Read ===
+Overall: Risk-On / Narrow Leadership
+Suggested action: Risk appetite is acceptable and existing leadership remains intact. Stay with leaders, but avoid over-concentrating if participation is narrow.
