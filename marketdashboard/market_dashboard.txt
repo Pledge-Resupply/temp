@@ -1,27 +1,27 @@
 
 === Market Regime + Leadership Dashboard ===
-As of: 2026-06-17
+As of: 2026-06-18
 Benchmark: SPY
 
 === Equity Leadership ===
  Rank                 Sector Ticker      Type        Status  RS Score  20D RS %  50D RS %  100D RS %  Dist MA50 %  20D Rank Change  50D Rank Change
-    1             Technology    XLK    Growth     Improving    0.1562      6.70     20.84      19.50         7.40                0                8
-    2            Industrials    XLI  Cyclical       Neutral    0.0104      5.43     -2.70       1.77         1.84                3                3
-    3             Financials    XLF  Cyclical       Neutral   -0.0105      4.65     -3.68      -5.12         2.20                5                5
-    4              Materials    XLB  Cyclical       Neutral   -0.0138      5.97     -6.77      -2.14         0.29                2               -1
-    5            Real Estate   XLRE     Other       Neutral   -0.0301     -0.70     -6.04      -0.25        -1.85               -1               -1
-    6 Consumer Discretionary    XLY  Cyclical Deteriorating   -0.0434     -0.03     -4.13     -12.34        -3.01                4                5
-    7             Healthcare    XLV Defensive       Neutral   -0.0592      0.90     -8.88     -11.21        -0.33                4                3
-    8       Consumer Staples    XLP Defensive       Neutral   -0.0680     -4.31     -8.91      -6.39        -2.28               -5               -2
-    9              Utilities    XLU Defensive       Neutral   -0.0778     -1.27    -14.99      -2.96        -3.99                0               -7
-   10 Communication Services    XLC    Growth Deteriorating   -0.1107     -6.88    -13.32     -13.32        -7.19               -3               -3
-   11                 Energy    XLE  Cyclical Deteriorating   -0.1251    -12.24    -19.67       3.11        -7.26               -9              -10
+    1             Technology    XLK    Growth     Improving    0.1681      7.23     22.26      21.34         8.82                0                7
+    2            Industrials    XLI  Cyclical       Neutral    0.0062      5.34     -3.77       2.25         1.98                3                2
+    3             Financials    XLF  Cyclical       Neutral   -0.0254      3.10     -5.13      -6.58         0.87                5                4
+    4            Real Estate   XLRE     Other       Neutral   -0.0342     -1.64     -6.09      -0.53        -2.57               -1                1
+    5              Materials    XLB  Cyclical       Neutral   -0.0349      3.73     -9.11      -3.49        -1.27                2               -3
+    6 Consumer Discretionary    XLY  Cyclical Deteriorating   -0.0455     -1.28     -4.18     -11.11        -2.70                0                5
+    7       Consumer Staples    XLP Defensive       Neutral   -0.0648     -3.35     -8.94      -6.42        -2.78               -3               -1
+    8              Utilities    XLU Defensive       Neutral   -0.0653     -0.07    -13.29      -2.63        -3.17                1               -5
+    9             Healthcare    XLV Defensive       Neutral   -0.0654      0.75     -9.68     -12.26        -1.42                2                1
+   10 Communication Services    XLC    Growth Deteriorating   -0.1024     -5.81    -12.37     -13.19        -6.63                0               -1
+   11                 Energy    XLE  Cyclical Deteriorating   -0.1109    -11.15    -16.53       1.27        -9.01               -9              -10
 
 === Leadership Summary ===
 Current leader: Technology (XLK)
 Runner-up: Industrials (XLI)
 Leadership strength: Dominant
-Leader gap vs #2: 0.1459
+Leader gap vs #2: 0.1619
 Leadership regime: Leadership Intact
 Participation: Narrow Leadership
 Leader fading: False
@@ -29,12 +29,12 @@ Challenger count: 0
 
 === Regime Signals ===
                  Signal   Ratio  Status  Risk Score  20D %  50D %  100D %  Dist MA50 %
-Small Cap Risk Appetite IWM/SPY Bullish           1   6.17   2.96    2.71         2.46
-         Market Breadth RSP/SPY Neutral           0   3.02  -3.56   -1.69         0.72
-   Credit Risk Appetite HYG/IEF Neutral           0  -0.47   1.54    1.02         0.28
-   Long Bonds vs Stocks TLT/SPY Neutral           0   2.23 -11.67   -8.23        -1.71
-         Gold vs Stocks GLD/SPY Bearish           1  -4.76 -18.46  -19.84        -7.41
-  Commodities vs Stocks DBC/SPY Bearish           0 -13.63 -16.49    5.77        -9.27
+Small Cap Risk Appetite IWM/SPY Bullish           1   4.63   2.53    3.57         2.43
+         Market Breadth RSP/SPY Neutral           0   2.47  -3.78   -1.88         0.34
+   Credit Risk Appetite HYG/IEF Neutral           0  -0.46   1.14    1.09         0.23
+   Long Bonds vs Stocks TLT/SPY Neutral           0   3.02  -8.96   -7.45        -0.73
+         Gold vs Stocks GLD/SPY Bearish           1  -7.79 -19.22  -22.81        -9.57
+  Commodities vs Stocks DBC/SPY Bearish           0 -11.79 -13.02    4.51       -10.16
 
 === Regime Summary ===
 Risk regime: Risk-On
@@ -47,9 +47,9 @@ None
 
 === Deteriorating Groups ===
  Rank                 Sector Ticker     Type        Status  RS Score  20D RS %  50D RS %  Dist MA50 %
-    6 Consumer Discretionary    XLY Cyclical Deteriorating   -0.0434     -0.03     -4.13        -3.01
-   10 Communication Services    XLC   Growth Deteriorating   -0.1107     -6.88    -13.32        -7.19
-   11                 Energy    XLE Cyclical Deteriorating   -0.1251    -12.24    -19.67        -7.26
+    6 Consumer Discretionary    XLY Cyclical Deteriorating   -0.0455     -1.28     -4.18        -2.70
+   10 Communication Services    XLC   Growth Deteriorating   -0.1024     -5.81    -12.37        -6.63
+   11                 Energy    XLE Cyclical Deteriorating   -0.1109    -11.15    -16.53        -9.01
 
 === Final Read ===
 Overall: Risk-On / Narrow Leadership
