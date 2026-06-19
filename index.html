@@ -1,374 +1,204 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Market Dashboard - 2026-06-12</title>
-  <style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Regime Dashboard</title>
+<style>
     :root {
-      --bg: #f4f6f8;
-      --panel: #ffffff;
-      --ink: #17202a;
-      --muted: #697586;
-      --line: #dde3ea;
-      --positive: #0f8f6b;
-      --positive-soft: #dff8f0;
-      --negative: #c2413b;
-      --negative-soft: #fde8e6;
-      --neutral: #546179;
-      --neutral-soft: #eef2f7;
-      --accent: #244c7f;
-      --accent-2: #b7791f;
-      --shadow: 0 18px 40px rgba(20, 32, 46, 0.08);
+        color-scheme: light;
+        --text: #101828;
+        --muted: #667085;
+        --line: #d0d5dd;
+        --soft-line: #eef2f6;
+        --panel: #ffffff;
+        --canvas: #f5f7fa;
     }
     * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
     body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", sans-serif;
-      line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: var(--canvas);
+        padding: 12px;
     }
-    .page { max-width: 1320px; margin: 0 auto; padding: 36px 24px 56px; }
-    .hero {
-      background: linear-gradient(135deg, #ffffff 0%, #eef3f8 100%);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      box-shadow: var(--shadow);
-      padding: 34px;
+    .page { max-width: 1900px; margin: 0 auto; }
+    .dashboard-header {
+        display: grid;
+        grid-template-columns: 230px minmax(0, 1fr);
+        gap: 8px;
+        align-items: stretch;
+        margin: 0 0 6px;
     }
-    .eyebrow {
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    .title-box { min-height: 118px; padding: 6px 0 0 2px; }
+    .app-title {
+        font-size: 22px;
+        line-height: 1.15;
+        font-weight: 850;
+        color: var(--text);
+        margin: 0;
+        white-space: nowrap;
     }
-    h1, h2, h3, p { margin-top: 0; }
-    h1 { max-width: 820px; margin-bottom: 14px; font-size: 42px; line-height: 1.05; }
-    h2 { margin-bottom: 18px; font-size: 23px; }
-    h3 { margin-bottom: 10px; font-size: 16px; }
-    .subhead { max-width: 900px; margin-bottom: 26px; color: var(--muted); font-size: 17px; }
-    .meta { display: flex; flex-wrap: wrap; gap: 10px; color: var(--muted); font-size: 13px; }
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 7px 11px;
-      background: rgba(255,255,255,0.76);
-      font-weight: 650;
+    .app-subtitle { font-size: 10px; color: var(--muted); margin-top: 2px; }
+    .outlook-panel {
+        border: 1px solid var(--line);
+        border-left-width: 5px;
+        border-radius: 7px;
+        background: var(--panel);
+        padding: 7px 10px 8px;
+        min-height: 118px;
+        overflow: hidden;
     }
-    .kpis {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-      margin: 18px 0 26px;
+    .outlook-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+        margin-bottom: 3px;
     }
-    .kpi {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 18px;
-      box-shadow: var(--shadow);
+    .outlook-heading { font-size: 13px; line-height: 1.1; font-weight: 850; }
+    .outlook-confidence { font-size: 10px; color: #475467; font-weight: 750; white-space: nowrap; }
+    .outlook-regime { font-size: 11px; line-height: 1.2; color: var(--text); font-weight: 750; margin-bottom: 4px; }
+    .outlook-grid { display: grid; grid-template-columns: .95fr 1fr 1fr; gap: 3px 12px; }
+    .outlook-line {
+        font-size: 9.8px;
+        line-height: 1.16;
+        color: #344054;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
-    .kpi span { display: block; color: var(--muted); font-size: 12px; font-weight: 750; text-transform: uppercase; }
-    .kpi strong { display: block; margin-top: 8px; font-size: 24px; line-height: 1.15; }
-    .grid { display: grid; gap: 18px; margin-top: 18px; }
-    .grid.two { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); }
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      box-shadow: var(--shadow);
-      padding: 22px;
-      overflow: visible;
+    .outlook-line.wide { grid-column: span 2; }
+    .outlook-line strong { color: var(--text); }
+    .card-row {
+        display: grid;
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+        gap: 6px;
+        margin: 0 0 6px;
     }
-    .panel-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 14px;
+    .regime-card {
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        padding: 6px 8px;
+        min-height: 56px;
+        background: var(--panel);
+        overflow: hidden;
     }
-    .panel-header p { margin-bottom: 0; color: var(--muted); font-size: 15px; }
-    .callout {
-      border-left: 4px solid var(--accent-2);
-      background: #fff8eb;
-      border-radius: 8px;
-      padding: 18px 20px;
-      color: #3f3323;
-      font-size: 16px;
+    .card-label { font-size: 10px; color: #475467; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .card-value { font-size: 17px; font-weight: 750; line-height: 1.1; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .card-note { font-size: 10px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .grid { display: grid; gap: 6px; margin-bottom: 6px; align-items: start; }
+    .grid.row1 { grid-template-columns: 1.1fr 1.55fr 1.35fr 1fr; }
+    .grid.row2 { grid-template-columns: 1.25fr 1.35fr .9fr 1.05fr 1.15fr; }
+    .panel-title { font-size: 11px; font-weight: 800; margin: 0 0 1px; color: var(--text); }
+    .panel-caption { font-size: 9px; color: var(--muted); margin: -1px 0 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .panel-note {
+        font-size: 9px;
+        line-height: 1.15;
+        color: #475467;
+        padding: 2px 2px 1px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 72px;
-      border-radius: 999px;
-      padding: 4px 9px;
-      font-size: 13px;
-      font-weight: 750;
+    .mini-table-wrap { border: 1px solid var(--line); border-radius: 7px; overflow: hidden; background: var(--panel); }
+    .mini-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 9.6px; line-height: 1.1; }
+    .mini-table th {
+        background: #f8fafc;
+        color: var(--muted);
+        font-weight: 650;
+        text-align: right;
+        padding: 3px 5px;
+        border-bottom: 1px solid #e4e7ec;
+        white-space: nowrap;
     }
-    .badge.positive { background: var(--positive-soft); color: var(--positive); }
-    .badge.negative { background: var(--negative-soft); color: var(--negative); }
-    .badge.neutral, .badge.flat { background: var(--neutral-soft); color: var(--neutral); }
-    .chart { display: block; width: 100%; height: auto; }
-    .axis, .axis.muted { stroke: #9aa8b7; stroke-width: 1; }
-    .axis.muted, .gridline { stroke: #dbe3ec; }
-    .plot-bg { fill: #f8fafc; stroke: #e2e8f0; }
-    .bar.positive { fill: var(--positive); }
-    .bar.negative { fill: var(--negative); }
-    .chart-label, .chart-value, .dot-label, .tick, .axis-label {
-      fill: #405063;
-      font-weight: 650;
+    .mini-table td {
+        padding: 3px 5px;
+        border-bottom: 1px solid var(--soft-line);
+        text-align: right;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-    .chart-label { font-size: 21px; font-weight: 800; }
-    .chart-value { fill: #203040; font-size: 20px; font-weight: 800; }
-    .dot-label { font-size: 17px; font-weight: 800; }
-    .tick, .axis-label { font-size: 17px; font-weight: 750; }
-    .dot.positive { fill: var(--accent); stroke: white; stroke-width: 2; }
-    .dot.negative { fill: var(--negative); stroke: white; stroke-width: 2; }
-    .line { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-    .line.benchmark { stroke: #8a97a8; }
-    .line.leader { stroke: var(--accent); }
-    .legend { display: flex; flex-wrap: wrap; gap: 12px; color: var(--muted); font-size: 15px; }
-    .legend span::before {
-      content: "";
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-radius: 999px;
-      margin-right: 6px;
-      vertical-align: -1px;
-      background: var(--accent);
+    .mini-table tr:last-child td { border-bottom: 0; }
+    .mini-table th:first-child, .mini-table td:first-child { text-align: left; font-weight: 750; color: var(--text); }
+    .mini-table th:nth-child(2), .mini-table td:nth-child(2) { text-align: left; }
+    .mini-table .pos { color: #067647; font-weight: 800; }
+    .mini-table .neg { color: #b42318; font-weight: 800; }
+    .mini-table .flat { color: #9a6a00; }
+    .mini-table .green { color: #067647; font-weight: 800; }
+    .mini-table .yellow { color: #9a6a00; font-weight: 800; }
+    .mini-table .red { color: #b42318; font-weight: 800; }
+    .mini-table .gray, .mini-table .muted { color: #98a2b3; }
+    .mini-table .spark { font-size: 12px; letter-spacing: 0; color: #344054; }
+    .mini-table .rank { color: #475467; font-weight: 650; }
+    .event-line {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        border-bottom: 1px solid #eaecf0;
+        font-size: 11px;
+        padding: 2px 0;
     }
-    .legend .benchmark::before { background: #8a97a8; }
-    .table-wrap {
-      width: 100%;
-      overflow-x: auto;
-      overflow-y: hidden;
-      scrollbar-width: thin;
+    .event-line:last-child { border-bottom: 0; }
+    details {
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        background: var(--panel);
+        padding: 7px 9px;
+        font-size: 11px;
+        color: #344054;
     }
-    table { width: 100%; min-width: 0; border-collapse: collapse; font-size: 14px; }
-    th {
-      color: var(--muted);
-      font-size: 12px;
-      letter-spacing: 0.05em;
-      text-align: left;
-      text-transform: uppercase;
-      border-bottom: 1px solid var(--line);
-      padding: 10px 8px;
-      white-space: nowrap;
+    summary { cursor: pointer; font-weight: 800; color: var(--text); }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 10px; line-height: 1.35; margin: 7px 0 3px; }
+    @media (max-width: 1200px) {
+        body { padding: 10px; }
+        .dashboard-header { grid-template-columns: 1fr; }
+        .title-box { min-height: auto; }
+        .card-row { grid-template-columns: repeat(4, 1fr); }
+        .grid.row1, .grid.row2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
-    td { border-bottom: 1px solid #edf1f5; padding: 11px 8px; vertical-align: middle; }
-    tbody tr:last-child td { border-bottom: 0; }
-    .num { text-align: right; font-variant-numeric: tabular-nums; }
-    .num.positive { color: var(--positive); font-weight: 750; }
-    .num.negative { color: var(--negative); font-weight: 750; }
-    .empty { color: var(--muted); padding: 18px; border: 1px dashed var(--line); border-radius: 8px; }
-    .footer { margin-top: 28px; color: var(--muted); font-size: 12px; text-align: center; }
-    @media (max-width: 1280px) {
-      .grid.two { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 900px) {
-      .page { padding: 24px 14px 42px; }
-      .hero { padding: 24px; }
-      h1 { font-size: 32px; }
-      .kpis { grid-template-columns: 1fr; }
-      .panel { padding: 18px; }
-      .panel-header { display: block; }
-      table { font-size: 13px; }
-      th, td { padding: 9px 6px; }
+    @media (max-width: 720px) {
+        .card-row, .grid.row1, .grid.row2, .outlook-grid { grid-template-columns: 1fr; }
+        .outlook-line.wide { grid-column: auto; }
+        .app-title { white-space: normal; }
     }
     </style>
 </head>
-<body>
-  <main class="page">
-    <section class="hero">
-      <div class="eyebrow">Market Regime + Leadership Dashboard</div>
-      <h1>Risk-On with Narrow Leadership</h1>
-      <p class="subhead">Risk appetite is acceptable and existing leadership remains intact. Stay with leaders, but avoid over-concentrating if participation is narrow.</p>
-      <div class="meta">
-        <span class="pill">As of 2026-06-12</span>
-        <span class="pill">Benchmark SPY</span>
-        <span class="pill">Leader Technology (XLK)</span>
-      </div>
-    </section>
-
-    <section class="kpis">
-      <div class="kpi"><span>Risk Regime</span><strong><span class="badge positive">Risk-On</span></strong></div>
-      <div class="kpi"><span>Risk Score</span><strong>+2</strong></div>
-      <div class="kpi"><span>Leadership</span><strong><span class="badge neutral">Leadership Intact</span></strong></div>
-      <div class="kpi"><span>Challengers</span><strong>0</strong></div>
-    </section>
-
-    <section class="grid two">
-      <div class="panel">
-        <div class="panel-header">
-          <div>
-            <h2>Relative Strength Leaders</h2>
-            <p>Composite score using 20, 50, and 100 day relative strength versus SPY.</p>
-          </div>
+<body><main class="page">
+    <div class="dashboard-header">
+        <div class="title-box">
+            <div class="app-title">Market Regime Dashboard</div>
+            <div class="app-subtitle">Daily tactical regime model</div>
+            <div class="app-subtitle">Stocks/ETFs through 2026-06-18; VIX/DXY 2026-06-19; crypto 2026-06-19; FRED 2026-06-18.</div>
         </div>
-        <svg class="chart" viewBox="0 0 900 484" role="img" aria-label="RS Score bar chart">
-<line class="axis" x1="540.0" y1="18" x2="540.0" y2="466" />
-<text class="chart-label" x="0" y="51">Communication Services</text>
-<rect class="bar negative" x="400.6" y="34" width="139.4" height="22" rx="6" />
-<text class="chart-value" x="388.6" y="51" text-anchor="end">-0.08</text>
-<text class="chart-label" x="0" y="91">Utilities</text>
-<rect class="bar negative" x="415.1" y="74" width="124.9" height="22" rx="6" />
-<text class="chart-value" x="403.1" y="91" text-anchor="end">-0.08</text>
-<text class="chart-label" x="0" y="131">Consumer Discretionary</text>
-<rect class="bar negative" x="453.8" y="114" width="86.2" height="22" rx="6" />
-<text class="chart-value" x="441.8" y="131" text-anchor="end">-0.05</text>
-<text class="chart-label" x="0" y="171">Energy</text>
-<rect class="bar negative" x="473.3" y="154" width="66.7" height="22" rx="6" />
-<text class="chart-value" x="461.3" y="171" text-anchor="end">-0.04</text>
-<text class="chart-label" x="0" y="211">Healthcare</text>
-<rect class="bar negative" x="482.8" y="194" width="57.2" height="22" rx="6" />
-<text class="chart-value" x="470.8" y="211" text-anchor="end">-0.03</text>
-<text class="chart-label" x="0" y="251">Materials</text>
-<rect class="bar negative" x="483.6" y="234" width="56.4" height="22" rx="6" />
-<text class="chart-value" x="471.6" y="251" text-anchor="end">-0.03</text>
-<text class="chart-label" x="0" y="291">Consumer Staples</text>
-<rect class="bar negative" x="484.4" y="274" width="55.6" height="22" rx="6" />
-<text class="chart-value" x="472.4" y="291" text-anchor="end">-0.03</text>
-<text class="chart-label" x="0" y="331">Industrials</text>
-<rect class="bar negative" x="505.7" y="314" width="34.3" height="22" rx="6" />
-<text class="chart-value" x="493.7" y="331" text-anchor="end">-0.02</text>
-<text class="chart-label" x="0" y="371">Financials</text>
-<rect class="bar negative" x="506.4" y="354" width="33.6" height="22" rx="6" />
-<text class="chart-value" x="494.4" y="371" text-anchor="end">-0.02</text>
-<text class="chart-label" x="0" y="411">Real Estate</text>
-<rect class="bar positive" x="540.0" y="394" width="9.9" height="22" rx="6" />
-<text class="chart-value" x="561.9" y="411" text-anchor="start">+0.01</text>
-<text class="chart-label" x="0" y="451">Technology</text>
-<rect class="bar positive" x="540.0" y="434" width="240.0" height="22" rx="6" />
-<text class="chart-value" x="792.0" y="451" text-anchor="start">+0.15</text>
-</svg>
-      </div>
-      <div class="panel">
-        <div class="panel-header">
-          <div>
-            <h2>Leader Trend</h2>
-            <p>XLK versus SPY, indexed to 100 over the last six months.</p>
-          </div>
+        <div class="outlook-panel" style="border-left-color:#117a37;">
+            <div class="outlook-top">
+                <div class="outlook-heading" style="color:#117a37;">Market Outlook</div>
+                <div class="outlook-confidence">Confidence 80/100: 4/5 core checks agree; drag: Leadership 3/5 cap groups and 4/11 sectors beating SPY.</div>
+            </div>
+            <div class="outlook-regime">Confirmed risk-on advance. Trend 100 and Breadth 70 define the structure; Risk-On 60 and Credit 80 define the confirmation.</div>
+            <div class="outlook-grid"><div class="outlook-line "><strong>Stance:</strong> Overweight equities; tilt small-mid, growth, value.</div><div class="outlook-line "><strong>Overweight:</strong> XLK, XLI, SOXX, SMH, XHB</div><div class="outlook-line "><strong>Underweight:</strong> XLE, XLC, XLP, XLRE</div><div class="outlook-line wide"><strong>Why:</strong> Trend 100 and Breadth 70 are strong; 4/11 sectors and 10/10 themes beat SPY.</div><div class="outlook-line "><strong>Risk:</strong> Risk-On is 60 and VIX is at the +45.6% percentile, so the rally is broadening but not fully confirmed.</div><div class="outlook-line wide"><strong>1-3M:</strong> 1-3 month base case: constructive grind higher led by XLK, XLI, SOXX, SMH (62%); upside acceleration if Risk-On clears 60 (26%); pullback/chop if VIX stays elevated or credit rolls (12%).</div></div>
         </div>
-        <div class="legend"><span>XLK</span><span class="benchmark">SPY</span></div>
-        <svg class="chart" viewBox="0 0 920 360" role="img" aria-label="Indexed price trend chart">
-<rect class="plot-bg" x="64" y="24" width="830" height="284" rx="10" />
-<line class="gridline" x1="64" y1="308.0" x2="894" y2="308.0" />
-<text class="tick" x="54" y="312.0" text-anchor="end">81</text>
-<line class="gridline" x1="64" y1="237.0" x2="894" y2="237.0" />
-<text class="tick" x="54" y="241.0" text-anchor="end">96</text>
-<line class="gridline" x1="64" y1="166.0" x2="894" y2="166.0" />
-<text class="tick" x="54" y="170.0" text-anchor="end">110</text>
-<line class="gridline" x1="64" y1="95.0" x2="894" y2="95.0" />
-<text class="tick" x="54" y="99.0" text-anchor="end">125</text>
-<line class="gridline" x1="64" y1="24.0" x2="894" y2="24.0" />
-<text class="tick" x="54" y="28.0" text-anchor="end">140</text>
-<path class="line benchmark" d="M 64.0,215.5 L 70.6,220.7 L 77.3,221.4 L 83.9,222.7 L 90.6,227.9 L 97.2,224.3 L 103.8,220.1 L 110.5,217.1 L 117.1,215.0 L 123.8,213.3 L 130.4,213.3 L 137.0,215.0 L 143.7,215.6 L 150.3,219.2 L 157.0,218.3 L 163.6,215.1 L 170.2,212.3 L 176.9,213.8 L 183.5,213.9 L 190.2,210.7 L 196.8,210.0 L 203.4,210.9 L 210.1,213.3 L 216.7,212.0 L 223.4,212.4 L 230.0,222.2 L 236.6,216.7 L 243.3,214.3 L 249.9,214.1 L 256.6,211.6 L 263.2,209.7 L 269.8,209.8 L 276.5,210.7 L 283.1,212.2 L 289.8,209.8 L 296.4,213.9 L 303.0,216.2 L 309.7,222.2 L 316.3,213.1 L 323.0,210.8 L 329.6,212.1 L 336.2,212.2 L 342.9,219.6 L 349.5,219.3 L 356.2,218.5 L 362.8,216.1 L 369.4,217.4 L 376.1,213.9 L 382.7,218.8 L 389.4,215.4 L 396.0,211.4 L 402.6,214.0 L 409.3,216.3 L 415.9,216.1 L 422.6,220.3 L 429.2,216.9 L 435.8,219.6 L 442.5,225.8 L 449.1,221.7 L 455.8,222.5 L 462.4,223.1 L 469.0,230.2 L 475.7,232.8 L 482.3,228.1 L 489.0,226.9 L 495.6,233.4 L 502.2,234.6 L 508.9,241.1 L 515.5,236.4 L 522.2,237.9 L 528.8,235.4 L 535.4,243.6 L 542.1,251.2 L 548.7,252.7 L 555.4,239.9 L 562.0,236.5 L 568.6,236.1 L 575.3,233.9 L 581.9,233.7 L 588.6,222.0 L 595.2,219.3 L 601.8,219.6 L 608.5,215.0 L 615.1,209.1 L 621.8,205.3 L 628.4,204.1 L 635.0,198.2 L 641.7,199.2 L 648.3,202.4 L 655.0,197.4 L 661.6,199.4 L 668.2,195.5 L 674.9,194.7 L 681.5,197.1 L 688.2,197.2 L 694.8,192.2 L 701.4,190.9 L 708.1,192.7 L 714.7,188.7 L 721.4,181.7 L 728.0,183.2 L 734.6,179.0 L 741.3,177.8 L 747.9,178.6 L 754.6,175.7 L 761.2,171.7 L 767.8,177.9 L 774.5,178.3 L 781.1,181.7 L 787.8,176.5 L 794.4,175.5 L 801.0,173.4 L 807.7,170.0 L 814.3,170.1 L 821.0,167.2 L 827.6,165.9 L 834.2,164.4 L 840.9,163.7 L 847.5,167.4 L 854.2,165.4 L 860.8,179.1 L 867.4,177.9 L 874.1,179.4 L 880.7,187.5 L 887.4,178.9 L 894.0,176.1" />
-<path class="line leader" d="M 64.0,215.5 L 70.6,229.4 L 77.3,233.8 L 83.9,233.0 L 90.6,243.2 L 97.2,236.3 L 103.8,226.4 L 110.5,223.9 L 117.1,221.3 L 123.8,220.2 L 130.4,219.5 L 137.0,221.6 L 143.7,223.1 L 150.3,227.7 L 157.0,226.7 L 163.6,225.6 L 170.2,219.1 L 176.9,219.5 L 183.5,226.9 L 190.2,220.7 L 196.8,218.6 L 203.4,219.6 L 210.1,225.4 L 216.7,222.9 L 223.4,222.4 L 230.0,234.6 L 236.6,228.3 L 243.3,224.8 L 249.9,224.1 L 256.6,220.9 L 263.2,214.5 L 269.8,210.7 L 276.5,218.4 L 283.1,228.0 L 289.8,223.6 L 296.4,233.9 L 303.0,246.7 L 309.7,254.7 L 316.3,236.9 L 323.0,229.8 L 329.6,232.3 L 336.2,231.0 L 342.9,243.1 L 349.5,242.0 L 356.2,242.3 L 362.8,237.6 L 369.4,239.9 L 376.1,237.7 L 382.7,245.4 L 389.4,239.6 L 396.0,230.9 L 402.6,237.3 L 409.3,244.6 L 415.9,242.1 L 422.6,248.7 L 429.2,241.1 L 435.8,240.0 L 442.5,249.4 L 449.1,241.4 L 455.8,241.4 L 462.4,239.2 L 469.0,247.6 L 475.7,250.9 L 482.3,244.5 L 489.0,242.1 L 495.6,247.2 L 502.2,245.7 L 508.9,255.8 L 515.5,249.9 L 522.2,252.5 L 528.8,250.5 L 535.4,264.3 L 542.1,272.7 L 548.7,280.5 L 555.4,263.0 L 562.0,256.5 L 568.6,253.0 L 575.3,250.5 L 581.9,248.4 L 588.6,234.6 L 595.2,233.3 L 601.8,231.5 L 608.5,221.9 L 615.1,214.3 L 621.8,206.7 L 628.4,201.1 L 635.0,193.5 L 641.7,192.9 L 648.3,192.4 L 655.0,181.4 L 661.6,188.7 L 668.2,174.5 L 674.9,173.4 L 681.5,182.2 L 688.2,178.1 L 694.8,176.9 L 701.4,169.2 L 708.1,168.6 L 714.7,157.0 L 721.4,142.8 L 728.0,143.9 L 734.6,125.0 L 741.3,117.3 L 747.9,126.0 L 754.6,120.7 L 761.2,112.1 L 767.8,122.6 L 774.5,128.7 L 781.1,132.4 L 787.8,119.7 L 794.4,115.0 L 801.0,109.2 L 807.7,93.8 L 814.3,96.1 L 821.0,88.3 L 827.6,74.8 L 834.2,59.4 L 840.9,51.5 L 847.5,57.9 L 854.2,67.8 L 860.8,109.5 L 867.4,96.9 L 874.1,108.0 L 880.7,121.4 L 887.4,100.1 L 894.0,94.9" />
-<text class="axis-label" x="64" y="342">2025-12-11</text>
-<text class="axis-label" x="894" y="342" text-anchor="end">2026-06-12</text>
-</svg>
-      </div>
-    </section>
-
-    <section class="grid two">
-      <div class="panel">
-        <div class="panel-header">
-          <div>
-            <h2>Momentum Map</h2>
-            <p>Upper-right groups have positive intermediate momentum and trade above their relative trend.</p>
-          </div>
-        </div>
-        <svg class="chart" viewBox="0 0 920 420" role="img" aria-label="Dist MA50 % versus 50D RS % scatter chart">
-<rect class="plot-bg" x="76" y="30" width="816" height="326" rx="10" />
-<line class="axis muted" x1="428.5" y1="30" x2="428.5" y2="356" />
-<line class="axis muted" x1="76" y1="208.9" x2="892" y2="208.9" />
-<circle class="dot positive" cx="797.8" cy="67.6" r="6"><title>XLK: 50D RS % +21.00, Dist MA50 % +7.41</title></circle>
-<text class="dot-label" x="806.8" y="59.6">XLK</text>
-<circle class="dot negative" cx="390.7" cy="198.0" r="6"><title>XLRE: 50D RS % -2.15, Dist MA50 % +0.57</title></circle>
-<text class="dot-label" x="399.7" y="190.0">XLRE</text>
-<circle class="dot negative" cx="345.9" cy="198.6" r="6"><title>XLF: 50D RS % -4.69, Dist MA50 % +0.54</title></circle>
-<text class="dot-label" x="354.9" y="190.6">XLF</text>
-<circle class="dot negative" cx="334.4" cy="218.2" r="6"><title>XLI: 50D RS % -5.35, Dist MA50 % -0.49</title></circle>
-<text class="dot-label" x="343.4" y="210.2">XLI</text>
-<circle class="dot negative" cx="306.5" cy="206.8" r="6"><title>XLP: 50D RS % -6.93, Dist MA50 % +0.11</title></circle>
-<text class="dot-label" x="315.5" y="198.8">XLP</text>
-<circle class="dot negative" cx="276.3" cy="226.2" r="6"><title>XLB: 50D RS % -8.65, Dist MA50 % -0.91</title></circle>
-<text class="dot-label" x="285.3" y="218.2">XLB</text>
-<circle class="dot negative" cx="287.3" cy="181.7" r="6"><title>XLV: 50D RS % -8.03, Dist MA50 % +1.43</title></circle>
-<text class="dot-label" x="296.3" y="173.7">XLV</text>
-<circle class="dot negative" cx="186.0" cy="268.2" r="6"><title>XLE: 50D RS % -13.79, Dist MA50 % -3.11</title></circle>
-<text class="dot-label" x="195.0" y="260.2">XLE</text>
-<circle class="dot negative" cx="319.6" cy="265.7" r="6"><title>XLY: 50D RS % -6.19, Dist MA50 % -2.98</title></circle>
-<text class="dot-label" x="328.6" y="257.7">XLY</text>
-<circle class="dot negative" cx="170.2" cy="292.4" r="6"><title>XLU: 50D RS % -14.69, Dist MA50 % -4.38</title></circle>
-<text class="dot-label" x="179.2" y="284.4">XLU</text>
-<circle class="dot negative" cx="229.1" cy="318.4" r="6"><title>XLC: 50D RS % -11.34, Dist MA50 % -5.75</title></circle>
-<text class="dot-label" x="238.1" y="310.4">XLC</text>
-<text class="axis-label" x="484.0" y="402" text-anchor="middle">50D RS %</text>
-<text class="axis-label" x="18" y="193.0" text-anchor="middle" transform="rotate(-90 18 193.0)">Dist MA50 %</text>
-</svg>
-      </div>
-      <div class="panel">
-        <div class="panel-header">
-          <div>
-            <h2>Regime Signal Balance</h2>
-            <p>Risk-on signals add points. Defensive leadership subtracts points.</p>
-          </div>
-        </div>
-        <svg class="chart" viewBox="0 0 900 284" role="img" aria-label="Risk Score bar chart">
-<line class="axis" x1="540.0" y1="18" x2="540.0" y2="266" />
-<text class="chart-label" x="0" y="51">Small Cap Risk Appetite</text>
-<rect class="bar positive" x="540.0" y="34" width="0.0" height="22" rx="6" />
-<text class="chart-value" x="552.0" y="51" text-anchor="start">+0.00</text>
-<text class="chart-label" x="0" y="91">Market Breadth</text>
-<rect class="bar positive" x="540.0" y="74" width="0.0" height="22" rx="6" />
-<text class="chart-value" x="552.0" y="91" text-anchor="start">+0.00</text>
-<text class="chart-label" x="0" y="131">Long Bonds vs Stocks</text>
-<rect class="bar positive" x="540.0" y="114" width="0.0" height="22" rx="6" />
-<text class="chart-value" x="552.0" y="131" text-anchor="start">+0.00</text>
-<text class="chart-label" x="0" y="171">Commodities vs Stocks</text>
-<rect class="bar positive" x="540.0" y="154" width="0.0" height="22" rx="6" />
-<text class="chart-value" x="552.0" y="171" text-anchor="start">+0.00</text>
-<text class="chart-label" x="0" y="211">Credit Risk Appetite</text>
-<rect class="bar positive" x="540.0" y="194" width="240.0" height="22" rx="6" />
-<text class="chart-value" x="792.0" y="211" text-anchor="start">+1.00</text>
-<text class="chart-label" x="0" y="251">Gold vs Stocks</text>
-<rect class="bar positive" x="540.0" y="234" width="240.0" height="22" rx="6" />
-<text class="chart-value" x="792.0" y="251" text-anchor="start">+1.00</text>
-</svg>
-      </div>
-    </section>
-
-    <section class="grid two">
-      <div class="panel">
-        <h2>Top Groups</h2>
-        <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Sector</th><th>Ticker</th><th>Status</th><th>RS Score</th><th>50D RS %</th></tr></thead><tbody><tr><td class="num">1</td><td>Technology</td><td>XLK</td><td class="badge-cell positive"><span class="badge positive">Improving</span></td><td class="num positive">+0.15</td><td class="num positive">+21.00</td></tr><tr><td class="num">2</td><td>Real Estate</td><td>XLRE</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num positive">+0.01</td><td class="num negative">-2.15</td></tr><tr><td class="num">3</td><td>Financials</td><td>XLF</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num negative">-0.02</td><td class="num negative">-4.69</td></tr><tr><td class="num">4</td><td>Industrials</td><td>XLI</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num negative">-0.02</td><td class="num negative">-5.35</td></tr><tr><td class="num">5</td><td>Consumer Staples</td><td>XLP</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num negative">-0.03</td><td class="num negative">-6.93</td></tr></tbody></table></div>
-      </div>
-      <div class="panel">
-        <h2>Regime Signals</h2>
-        <div class="table-wrap"><table><thead><tr><th>Signal</th><th>Ratio</th><th>Status</th><th>Risk Score</th><th>50D %</th></tr></thead><tbody><tr><td>Small Cap Risk Appetite</td><td>IWM/SPY</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num flat">+0.00</td><td class="num positive">+3.70</td></tr><tr><td>Market Breadth</td><td>RSP/SPY</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num flat">+0.00</td><td class="num negative">-2.90</td></tr><tr><td>Credit Risk Appetite</td><td>HYG/IEF</td><td class="badge-cell positive"><span class="badge positive">Bullish</span></td><td class="num positive">+1.00</td><td class="num positive">+2.01</td></tr><tr><td>Long Bonds vs Stocks</td><td>TLT/SPY</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num flat">+0.00</td><td class="num negative">-11.49</td></tr><tr><td>Gold vs Stocks</td><td>GLD/SPY</td><td class="badge-cell negative"><span class="badge negative">Bearish</span></td><td class="num positive">+1.00</td><td class="num negative">-22.01</td></tr><tr><td>Commodities vs Stocks</td><td>DBC/SPY</td><td class="badge-cell negative"><span class="badge negative">Bearish</span></td><td class="num flat">+0.00</td><td class="num negative">-12.06</td></tr></tbody></table></div>
-      </div>
-    </section>
-
-    <section class="grid">
-      <div class="panel">
-        <h2>Full Leadership Table</h2>
-        <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Sector</th><th>Ticker</th><th>Type</th><th>Status</th><th>RS Score</th><th>20D RS %</th><th>50D RS %</th><th>100D RS %</th><th>20D Rank Change</th><th>50D Rank Change</th></tr></thead><tbody><tr><td class="num">1</td><td>Technology</td><td>XLK</td><td>Growth</td><td class="badge-cell positive"><span class="badge positive">Improving</span></td><td class="num positive">+0.15</td><td class="num positive">+3.84</td><td class="num positive">+21.00</td><td class="num positive">+18.84</td><td class="num flat">+0.00</td><td class="num positive">+8.00</td></tr><tr><td class="num">2</td><td>Real Estate</td><td>XLRE</td><td>Other</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num positive">+0.01</td><td class="num positive">+4.20</td><td class="num negative">-2.15</td><td class="num positive">+0.48</td><td class="num positive">+3.00</td><td class="num positive">+4.00</td></tr><tr><td class="num">3</td><td>Financials</td><td>XLF</td><td>Cyclical</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num negative">-0.02</td><td class="num positive">+4.90</td><td class="num negative">-4.69</td><td class="num negative">-8.19</td><td class="num positive">+6.00</td><td class="num positive">+7.00</td></tr><tr><td class="num">4</td><td>Industrials</td><td>XLI</td><td>Cyclical</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num negative">-0.02</td><td class="num positive">+1.83</td><td class="num negative">-5.35</td><td class="num negative">-1.58</td><td class="num negative">-1.00</td><td class="num flat">+0.00</td></tr><tr><td class="num">5</td><td>Consumer Staples</td><td>XLP</td><td>Defensive</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num negative">-0.03</td><td class="num positive">+1.86</td><td class="num negative">-6.93</td><td class="num negative">-4.54</td><td class="num positive">+1.00</td><td class="num flat">+0.00</td></tr><tr><td class="num">6</td><td>Materials</td><td>XLB</td><td>Cyclical</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num negative">-0.03</td><td class="num positive">+1.86</td><td class="num negative">-8.65</td><td class="num negative">-0.92</td><td class="num negative">-2.00</td><td class="num negative">-4.00</td></tr><tr><td class="num">7</td><td>Healthcare</td><td>XLV</td><td>Defensive</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num negative">-0.03</td><td class="num positive">+5.80</td><td class="num negative">-8.03</td><td class="num negative">-9.46</td><td class="num positive">+4.00</td><td class="num positive">+1.00</td></tr><tr><td class="num">8</td><td>Energy</td><td>XLE</td><td>Cyclical</td><td class="badge-cell negative"><span class="badge negative">Deteriorating</span></td><td class="num negative">-0.04</td><td class="num negative">-0.04</td><td class="num negative">-13.79</td><td class="num positive">+10.86</td><td class="num negative">-6.00</td><td class="num negative">-7.00</td></tr><tr><td class="num">9</td><td>Consumer Discretionary</td><td>XLY</td><td>Cyclical</td><td class="badge-cell negative"><span class="badge negative">Deteriorating</span></td><td class="num negative">-0.05</td><td class="num negative">-0.89</td><td class="num negative">-6.19</td><td class="num negative">-10.65</td><td class="num negative">-2.00</td><td class="num positive">+2.00</td></tr><tr><td class="num">10</td><td>Utilities</td><td>XLU</td><td>Defensive</td><td class="badge-cell neutral"><span class="badge neutral">Neutral</span></td><td class="num negative">-0.08</td><td class="num positive">+0.03</td><td class="num negative">-14.69</td><td class="num negative">-4.91</td><td class="num flat">+0.00</td><td class="num negative">-7.00</td></tr><tr><td class="num">11</td><td>Communication Services</td><td>XLC</td><td>Growth</td><td class="badge-cell negative"><span class="badge negative">Deteriorating</span></td><td class="num negative">-0.08</td><td class="num negative">-3.84</td><td class="num negative">-11.34</td><td class="num negative">-10.08</td><td class="num negative">-3.00</td><td class="num negative">-4.00</td></tr></tbody></table></div>
-      </div>
-      <div class="callout">
-        <strong>Final read:</strong> Risk-On / Narrow Leadership. Risk appetite is acceptable and existing leadership remains intact. Stay with leaders, but avoid over-concentrating if participation is narrow.
-      </div>
-    </section>
-
-    <div class="footer">Generated by market_dashboard.py</div>
-  </main>
-</body>
+    </div>
+    <div class="card-row"><div class="regime-card"><div class="card-label">Market Health</div><div class="card-value" style="color:#117a37;">75</div><div class="card-note">up 0-100 composite</div></div><div class="regime-card"><div class="card-label">Bull/Bear</div><div class="card-value" style="color:#117a37;">Bullish</div><div class="card-note">Composite regime</div></div><div class="regime-card"><div class="card-label">Risk-On</div><div class="card-value" style="color:#9a6a00;">60</div><div class="card-note">flat 0-100 composite</div></div><div class="regime-card"><div class="card-label">Trend</div><div class="card-value" style="color:#117a37;">100</div><div class="card-note">Indexes vs 20/50/200DMA</div></div><div class="regime-card"><div class="card-label">Breadth</div><div class="card-value" style="color:#117a37;">70</div><div class="card-note">Universe trend share</div></div><div class="regime-card"><div class="card-label">Volatility</div><div class="card-value" style="color:#9a6a00;">Normal</div><div class="card-note">Score 54</div></div><div class="regime-card"><div class="card-label">Credit</div><div class="card-value" style="color:#117a37;">Healthy</div><div class="card-note">Score 80</div></div><div class="regime-card"><div class="card-label">Rates/Liquidity</div><div class="card-value" style="color:#117a37;">Tailwind</div><div class="card-note">Score 80</div></div></div><div class="grid row1"><section><div class="panel-title">Indexes</div><div class="mini-table-wrap" style="min-height:230px;"><table class="mini-table"><thead><tr><th>Sym</th><th>1D</th><th>5D</th><th>1M</th><th>20</th><th>50</th><th>200</th><th>Spark</th></tr></thead><tbody><tr><td class="">SPY</td><td class="pos">+1.0%</td><td class="pos">+1.5%</td><td class="pos">+2.0%</td><td class="flat">+0.2%</td><td class="pos">+2.6%</td><td class="pos">+9.1%</td><td class="spark">▆▆▇▇██▇▇▃▄▃▁▄▄▇▆▄▆</td></tr><tr><td class="">QQQ</td><td class="pos">+2.4%</td><td class="pos">+3.1%</td><td class="pos">+5.4%</td><td class="pos">+1.8%</td><td class="pos">+6.7%</td><td class="pos">+17.8%</td><td class="spark">▆▆▇▇███▇▃▄▃▁▄▅█▆▅▇</td></tr><tr><td class="">IWM</td><td class="pos">+1.9%</td><td class="pos">+2.0%</td><td class="pos">+8.5%</td><td class="pos">+2.5%</td><td class="pos">+5.3%</td><td class="pos">+15.1%</td><td class="spark">▅▅▆▅▅▆▄▆▁▂▃▁▅▆█▆▅█</td></tr><tr><td class="">DIA</td><td class="flat">+0.1%</td><td class="pos">+1.5%</td><td class="pos">+4.6%</td><td class="pos">+1.2%</td><td class="pos">+3.5%</td><td class="pos">+7.8%</td><td class="spark">▃▃▃▄▅▆▄▆▄▄▄▁▄▅▇█▆▇</td></tr><tr><td class="">RSP</td><td class="flat">+0.5%</td><td class="flat">+0.1%</td><td class="pos">+4.2%</td><td class="flat">+0.5%</td><td class="pos">+2.5%</td><td class="pos">+7.6%</td><td class="spark">▂▂▃▄▄▅▄▆▂▂▄▁▅▇█▇▄▅</td></tr><tr><td class="">MDY</td><td class="pos">+1.0%</td><td class="pos">+0.5%</td><td class="pos">+6.2%</td><td class="pos">+1.5%</td><td class="pos">+3.3%</td><td class="pos">+10.6%</td><td class="spark">▄▃▃▃▃▅▅▆▂▂▄▁▆▇█▇▅▇</td></tr></tbody></table></div></section><section><div class="panel-title">Sector Rotation</div><div class="panel-caption">Ranked by 1M relative strength vs SPY</div><div class="mini-table-wrap" style="min-height:230px;"><table class="mini-table"><thead><tr><th>Sym</th><th>Name</th><th>1D</th><th>5D</th><th>1M</th><th>RS</th><th>#</th></tr></thead><tbody><tr><td class="">XLK</td><td class="">Technology</td><td class="pos">+3.0%</td><td class="pos">+4.4%</td><td class="pos">+10.4%</td><td class="pos">+8.4%</td><td class="rank">1</td></tr><tr><td class="">XLI</td><td class="">Industrials</td><td class="pos">+0.7%</td><td class="pos">+3.3%</td><td class="pos">+7.2%</td><td class="pos">+5.2%</td><td class="rank">2</td></tr><tr><td class="">XLB</td><td class="">Materials</td><td class="flat">-0.4%</td><td class="pos">+1.1%</td><td class="pos">+5.6%</td><td class="pos">+3.6%</td><td class="rank">3</td></tr><tr><td class="">XLF</td><td class="">Financials</td><td class="neg">-0.9%</td><td class="pos">+1.8%</td><td class="pos">+4.8%</td><td class="pos">+2.8%</td><td class="rank">4</td></tr><tr><td class="">XLY</td><td class="">Cons. Disc.</td><td class="pos">+1.5%</td><td class="pos">+0.8%</td><td class="pos">+1.9%</td><td class="flat">-0.1%</td><td class="rank">5</td></tr><tr><td class="">XLV</td><td class="">Healthcare</td><td class="neg">-0.9%</td><td class="neg">-3.1%</td><td class="pos">+1.4%</td><td class="neg">-0.6%</td><td class="rank">6</td></tr><tr><td class="">XLU</td><td class="">Utilities</td><td class="pos">+0.7%</td><td class="pos">+1.6%</td><td class="pos">+0.9%</td><td class="neg">-1.1%</td><td class="rank">7</td></tr><tr><td class="">XLRE</td><td class="">Real Estate</td><td class="flat">-0.3%</td><td class="neg">-2.4%</td><td class="flat">-0.2%</td><td class="neg">-2.2%</td><td class="rank">8</td></tr><tr><td class="">XLP</td><td class="">Cons. Staples</td><td class="flat">-0.5%</td><td class="neg">-2.3%</td><td class="neg">-3.3%</td><td class="neg">-5.3%</td><td class="rank">9</td></tr><tr><td class="">XLC</td><td class="">Comm. Services</td><td class="flat">+0.2%</td><td class="neg">-2.4%</td><td class="neg">-5.5%</td><td class="neg">-7.5%</td><td class="rank">10</td></tr><tr><td class="">XLE</td><td class="">Energy</td><td class="neg">-1.7%</td><td class="neg">-5.9%</td><td class="neg">-12.3%</td><td class="neg">-14.3%</td><td class="rank">11</td></tr></tbody></table></div></section><section><div class="panel-title">Industry / Theme Leaders</div><div class="mini-table-wrap" style="min-height:230px;"><table class="mini-table"><thead><tr><th>Sym</th><th>Name</th><th>1D</th><th>5D</th><th>1M</th><th>RS</th><th>#</th></tr></thead><tbody><tr><td class="">SOXX</td><td class="">Semiconductors</td><td class="pos">+6.6%</td><td class="pos">+8.9%</td><td class="pos">+28.7%</td><td class="pos">+26.7%</td><td class="rank">1</td></tr><tr><td class="">SMH</td><td class="">Semiconductors</td><td class="pos">+5.6%</td><td class="pos">+8.1%</td><td class="pos">+21.1%</td><td class="pos">+19.1%</td><td class="rank">2</td></tr><tr><td class="">XHB</td><td class="">Homebuilders</td><td class="pos">+3.4%</td><td class="pos">+3.0%</td><td class="pos">+17.0%</td><td class="pos">+15.0%</td><td class="rank">3</td></tr><tr><td class="">XBI</td><td class="">Biotech EW</td><td class="pos">+0.9%</td><td class="pos">+5.9%</td><td class="pos">+10.9%</td><td class="pos">+8.9%</td><td class="rank">4</td></tr><tr><td class="">ITA</td><td class="">Aerospace/Def.</td><td class="neg">-1.5%</td><td class="pos">+1.4%</td><td class="pos">+9.6%</td><td class="pos">+7.6%</td><td class="rank">5</td></tr><tr><td class="">XRT</td><td class="">Retail</td><td class="pos">+2.2%</td><td class="neg">-1.5%</td><td class="pos">+9.2%</td><td class="pos">+7.1%</td><td class="rank">6</td></tr><tr><td class="">ARKK</td><td class="">Innovation</td><td class="pos">+2.1%</td><td class="pos">+6.2%</td><td class="pos">+8.6%</td><td class="pos">+6.6%</td><td class="rank">7</td></tr><tr><td class="">KRE</td><td class="">Regional Banks</td><td class="pos">+0.7%</td><td class="neg">-0.9%</td><td class="pos">+6.1%</td><td class="pos">+4.1%</td><td class="rank">8</td></tr><tr><td class="">KBE</td><td class="">Banks</td><td class="pos">+0.5%</td><td class="flat">-0.4%</td><td class="pos">+6.0%</td><td class="pos">+4.0%</td><td class="rank">9</td></tr><tr><td class="">IBB</td><td class="">Biotech</td><td class="flat">+0.1%</td><td class="pos">+1.9%</td><td class="pos">+5.8%</td><td class="pos">+3.8%</td><td class="rank">10</td></tr></tbody></table></div></section><section><div class="panel-title">Market Cap Rotation</div><div class="mini-table-wrap" style="min-height:118px;"><table class="mini-table"><thead><tr><th>Sym</th><th>Name</th><th>5D</th><th>1M</th><th>RS</th><th>#</th></tr></thead><tbody><tr><td class="">IWC</td><td class="">Micro Cap</td><td class="pos">+2.9%</td><td class="pos">+9.3%</td><td class="pos">+7.3%</td><td class="rank">1</td></tr><tr><td class="">IWM</td><td class="">Small Cap</td><td class="pos">+2.0%</td><td class="pos">+8.5%</td><td class="pos">+6.5%</td><td class="rank">2</td></tr><tr><td class="">MDY</td><td class="">Mid Cap</td><td class="pos">+0.5%</td><td class="pos">+6.2%</td><td class="pos">+4.2%</td><td class="rank">3</td></tr><tr><td class="">SPY</td><td class="">Large Cap</td><td class="pos">+1.5%</td><td class="pos">+2.0%</td><td class="flat">+0.0%</td><td class="rank">4</td></tr><tr><td class="">MGC</td><td class="">Mega Cap</td><td class="pos">+1.6%</td><td class="pos">+1.8%</td><td class="flat">-0.3%</td><td class="rank">5</td></tr></tbody></table></div><section><div class="panel-title">Event Risk</div><div class="mini-table-wrap" style="min-height:91px; padding:3px 8px;"><div class="event-line"><span>NFP (Employment Situation)</span><strong>+13d</strong></div><div class="event-line"><span>CPI</span><strong>+25d</strong></div><div class="event-line"><span>PPI</span><strong>+26d</strong></div><div class="event-line"><span>Mega-Cap Earnings Week</span><strong>+38d</strong></div><div class="event-line"><span>FOMC Rate Decision</span><strong>+40d</strong></div></div></section></section></div><div class="grid row2"><section><div class="panel-title">Leadership</div><div class="mini-table-wrap" style="min-height:235px;"><table class="mini-table"><thead><tr><th>Sym</th><th>1D</th><th>5D</th><th>1M</th><th>Trend</th><th>RS</th><th>#</th></tr></thead><tbody><tr><td class="">AMD</td><td class="pos">+4.8%</td><td class="pos">+9.9%</td><td class="pos">+29.7%</td><td class="">Uptrend</td><td class="pos">+27.6%</td><td class="rank">1</td></tr><tr><td class="">AVGO</td><td class="pos">+4.6%</td><td class="pos">+6.5%</td><td class="flat">-0.1%</td><td class="">Weak</td><td class="neg">-2.1%</td><td class="rank">2</td></tr><tr><td class="">AAPL</td><td class="pos">+0.7%</td><td class="pos">+0.8%</td><td class="flat">-0.4%</td><td class="">Constructive</td><td class="neg">-2.4%</td><td class="rank">3</td></tr><tr><td class="">TSLA</td><td class="pos">+1.0%</td><td class="flat">+0.3%</td><td class="neg">-0.9%</td><td class="">Downtrend</td><td class="neg">-2.9%</td><td class="rank">4</td></tr><tr><td class="">META</td><td class="pos">+1.7%</td><td class="pos">+1.6%</td><td class="neg">-4.1%</td><td class="">Downtrend</td><td class="neg">-6.1%</td><td class="rank">5</td></tr><tr><td class="">NVDA</td><td class="pos">+2.7%</td><td class="pos">+2.6%</td><td class="neg">-4.6%</td><td class="">Constructive</td><td class="neg">-6.6%</td><td class="rank">6</td></tr><tr><td class="">GOOGL</td><td class="pos">+1.2%</td><td class="pos">+2.9%</td><td class="neg">-5.0%</td><td class="">Constructive</td><td class="neg">-7.0%</td><td class="rank">7</td></tr><tr><td class="">AMZN</td><td class="pos">+2.9%</td><td class="pos">+1.2%</td><td class="neg">-5.8%</td><td class="">Weak</td><td class="neg">-7.8%</td><td class="rank">8</td></tr><tr><td class="">MSFT</td><td class="flat">+0.0%</td><td class="neg">-2.9%</td><td class="neg">-9.0%</td><td class="">Downtrend</td><td class="neg">-11.0%</td><td class="rank">9</td></tr><tr><td class="">NFLX</td><td class="flat">+0.5%</td><td class="neg">-4.8%</td><td class="neg">-13.4%</td><td class="">Downtrend</td><td class="neg">-15.4%</td><td class="rank">10</td></tr></tbody></table></div></section><section><div class="panel-title">Risk-On / Risk-Off</div><div class="panel-caption">Composite 60</div><div class="mini-table-wrap" style="min-height:235px;"><table class="mini-table"><thead><tr><th>Ratio</th><th>5D</th><th>20</th><th>50</th><th>Dir</th><th>Signal</th><th>Score</th></tr></thead><tbody><tr><td class="">QQQ/SPY</td><td class="pos">+1.7%</td><td class="pos">+1.6%</td><td class="pos">+4.1%</td><td class="">↑</td><td class="">Risk-on</td><td class="green">100</td></tr><tr><td class="">IWM/SPY</td><td class="pos">+0.5%</td><td class="pos">+2.3%</td><td class="pos">+2.6%</td><td class="">↑</td><td class="">Risk-on</td><td class="green">100</td></tr><tr><td class="">XLY/XLP</td><td class="pos">+3.2%</td><td class="flat">+0.3%</td><td class="flat">-0.0%</td><td class="">↑</td><td class="">Risk-on</td><td class="yellow">50</td></tr><tr><td class="">HYG/TLT</td><td class="neg">-0.8%</td><td class="neg">-1.3%</td><td class="neg">-1.2%</td><td class="">↓</td><td class="">Risk-off</td><td class="red">0</td></tr><tr><td class="">JNK/TLT</td><td class="neg">-0.8%</td><td class="neg">-1.3%</td><td class="neg">-1.1%</td><td class="">↓</td><td class="">Risk-off</td><td class="red">0</td></tr><tr><td class="">BTC/SPY</td><td class="pos">+2.6%</td><td class="neg">-4.8%</td><td class="neg">-14.2%</td><td class="">↑</td><td class="">Risk-off</td><td class="red">0</td></tr><tr><td class="">SMH/SPY</td><td class="pos">+6.6%</td><td class="pos">+8.3%</td><td class="pos">+17.6%</td><td class="">↑</td><td class="">Risk-on</td><td class="green">100</td></tr><tr><td class="">ARKK/SPY</td><td class="pos">+4.7%</td><td class="pos">+2.8%</td><td class="pos">+1.5%</td><td class="">↑</td><td class="">Risk-on</td><td class="green">100</td></tr><tr><td class="">GLD/SPY</td><td class="neg">-1.2%</td><td class="neg">-3.7%</td><td class="neg">-9.9%</td><td class="">↓</td><td class="">Risk-on</td><td class="green">100</td></tr><tr><td class="">TLT/SPY</td><td class="neg">-0.6%</td><td class="pos">+1.4%</td><td class="neg">-1.0%</td><td class="">↓</td><td class="">Risk-on</td><td class="yellow">50</td></tr></tbody></table></div></section><section><div class="panel-title">Volatility</div><div class="mini-table-wrap" style="min-height:112px;"><table class="mini-table"><thead><tr><th>Sym</th><th>Val</th><th>Chg</th><th>%ile</th><th>Regime</th></tr></thead><tbody><tr><td class="">^VIX</td><td class="">16.78</td><td class="">-1.66</td><td class="pos">+45.6%</td><td class="">Normal</td></tr><tr><td class="">^VVIX</td><td class="">88.10</td><td class="">-6.43</td><td class="pos">+6.0%</td><td class="">Low</td></tr><tr><td class="">^MOVE</td><td class="">70.66</td><td class="">1.30</td><td class="pos">+35.3%</td><td class="">Normal</td></tr></tbody></table></div><section><div class="panel-title">Bonds</div><div class="mini-table-wrap" style="min-height:112px;"><table class="mini-table"><thead><tr><th>Sym</th><th>5D</th><th>1M</th><th>50</th><th>Trend</th></tr></thead><tbody><tr><td class="">SHY</td><td class="flat">-0.1%</td><td class="flat">+0.2%</td><td class="flat">+0.0%</td><td class="">Constructive</td></tr><tr><td class="">IEF</td><td class="flat">+0.0%</td><td class="pos">+1.7%</td><td class="flat">+0.1%</td><td class="">Constructive</td></tr><tr><td class="">TLT</td><td class="pos">+0.9%</td><td class="pos">+4.9%</td><td class="pos">+1.7%</td><td class="">Uptrend</td></tr></tbody></table></div></section></section><section><div class="panel-title">Rates / Credit</div><div class="panel-caption">OK</div><div class="mini-table-wrap" style="min-height:112px;"><table class="mini-table"><thead><tr><th>FRED</th><th>Val</th><th>5D Chg</th><th>1M Chg</th></tr></thead><tbody><tr><td class="">DGS2</td><td class="">4.20</td><td class="">0.15</td><td class="">0.12</td></tr><tr><td class="">DGS10</td><td class="">4.49</td><td class="">0.04</td><td class="">-0.08</td></tr><tr><td class="">DGS30</td><td class="">4.93</td><td class="">-0.02</td><td class="">-0.17</td></tr><tr><td class="">T10Y2Y</td><td class="">0.27</td><td class="">-0.13</td><td class="">-0.22</td></tr><tr><td class="">FEDFUNDS</td><td class="">3.63</td><td class="">0.00</td><td class="">0.00</td></tr><tr><td class="">SOFR</td><td class="">3.63</td><td class="">0.03</td><td class="">0.12</td></tr><tr><td class="">BAMLH0A0HYM2</td><td class="">2.63</td><td class="">-0.15</td><td class="">-0.15</td></tr><tr><td class="">BAA10Y</td><td class="">1.50</td><td class="">-0.05</td><td class="">-0.09</td></tr></tbody></table></div><section><div class="panel-title">Credit ETFs</div><div class="mini-table-wrap" style="min-height:112px;"><table class="mini-table"><thead><tr><th>Sym</th><th>5D</th><th>1M</th><th>50</th><th>Trend</th></tr></thead><tbody><tr><td class="">HYG</td><td class="flat">+0.1%</td><td class="pos">+1.3%</td><td class="flat">+0.5%</td><td class="">Uptrend</td></tr><tr><td class="">JNK</td><td class="flat">+0.1%</td><td class="pos">+1.4%</td><td class="pos">+0.6%</td><td class="">Uptrend</td></tr><tr><td class="">LQD</td><td class="flat">-0.0%</td><td class="pos">+2.2%</td><td class="pos">+0.5%</td><td class="">Uptrend</td></tr><tr><td class="">TLT</td><td class="pos">+0.9%</td><td class="pos">+4.9%</td><td class="pos">+1.7%</td><td class="">Uptrend</td></tr></tbody></table></div></section></section><section><div class="panel-title">Dollar / Commodities / Crypto</div><div class="mini-table-wrap" style="min-height:235px;"><table class="mini-table"><thead><tr><th>Sym</th><th>Name</th><th>1D</th><th>5D</th><th>Trend</th><th>Read</th></tr></thead><tbody><tr><td class="">UUP</td><td class="">Dollar</td><td class="flat">+0.4%</td><td class="pos">+1.3%</td><td class="">↑</td><td class="">Risk-off</td></tr><tr><td class="">DX-Y.NYB</td><td class="">Dollar Index</td><td class="pos">+0.9%</td><td class="pos">+1.1%</td><td class="">↑</td><td class="">Risk-off</td></tr><tr><td class="">GLD</td><td class="">Gold</td><td class="flat">-0.4%</td><td class="flat">+0.2%</td><td class="">↑</td><td class="">Risk-off</td></tr><tr><td class="">SLV</td><td class="">Silver</td><td class="neg">-1.8%</td><td class="neg">-2.2%</td><td class="">↓</td><td class="">Risk-on</td></tr><tr><td class="">CPER</td><td class="">Copper</td><td class="pos">+0.6%</td><td class="flat">-0.2%</td><td class="">↓</td><td class="">Risk-off</td></tr><tr><td class="">USO</td><td class="">Oil</td><td class="pos">+0.6%</td><td class="neg">-10.8%</td><td class="">↓</td><td class="">Risk-off</td></tr><tr><td class="">UNG</td><td class="">Natural Gas</td><td class="pos">+1.5%</td><td class="pos">+5.2%</td><td class="">↑</td><td class="">Inflation up</td></tr><tr><td class="">BTC-USD</td><td class="">Bitcoin</td><td class="neg">-1.8%</td><td class="flat">-0.5%</td><td class="">↓</td><td class="">Risk-off</td></tr><tr><td class="">ETH-USD</td><td class="">Ethereum</td><td class="neg">-2.4%</td><td class="pos">+2.0%</td><td class="">↑</td><td class="">Risk-on</td></tr></tbody></table></div></section></div><details><summary>Formula Notes / Data Availability</summary><pre>{
+  &quot;scores&quot;: {
+    &quot;Trend&quot;: 100.0,
+    &quot;Breadth&quot;: 70.5,
+    &quot;Risk-On&quot;: 60.0,
+    &quot;Volatility&quot;: 54.4,
+    &quot;Credit&quot;: 80.0,
+    &quot;Rates&quot;: 80.0
+  },
+  &quot;market_health&quot;: 75.2,
+  &quot;unavailable_yfinance&quot;: [],
+  &quot;fred_status&quot;: &quot;OK&quot;,
+  &quot;market_data_date&quot;: &quot;2026-06-18&quot;,
+  &quot;live_macro_date&quot;: &quot;2026-06-19&quot;,
+  &quot;crypto_data_date&quot;: &quot;2026-06-19&quot;,
+  &quot;fred_data_date&quot;: &quot;2026-06-18&quot;,
+  &quot;last_loaded&quot;: &quot;2026-06-19 09:30:02&quot;
+}</pre></details></main></body>
 </html>
