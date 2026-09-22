@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rotten Tomatoes — Movies at Home (Popular)</title>
     <link>https://www.rottentomatoes.com/browse/movies_at_home/sort:popular?page=5</link>
@@ -15,7 +15,13 @@
         <img src="https://resizing.flixster.com/zIBTPyViguSmGj9m3On1z7Ak_Sc%3D/68x102/v2/https%3A//resizing.flixster.com/vnDZlLeBju-2g_Lyd8h-b8KskXU%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JiOTE1ZDVlLTBiZTgtNGRiZS1iYTM1LWNjOTZjN2FiMDQyMS5qcGc%3D" alt="Poster for Best of the Best" />
         <p>Streaming date: Sep 18, 2026. Tomatometer: 82%. Popcornmeter: 74%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/zIBTPyViguSmGj9m3On1z7Ak_Sc%3D/68x102/v2/https%3A//resizing.flixster.com/vnDZlLeBju-2g_Lyd8h-b8KskXU%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JiOTE1ZDVlLTBiZTgtNGRiZS1iYTM1LWNjOTZjN2FiMDQyMS5qcGc%3D" alt="Poster for Best of the Best" /></p>
+        <p>Streaming date: Sep 18, 2026. Tomatometer: 82%. Popcornmeter: 74%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/zIBTPyViguSmGj9m3On1z7Ak_Sc%3D/68x102/v2/https%3A//resizing.flixster.com/vnDZlLeBju-2g_Lyd8h-b8KskXU%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JiOTE1ZDVlLTBiZTgtNGRiZS1iYTM1LWNjOTZjN2FiMDQyMS5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/zIBTPyViguSmGj9m3On1z7Ak_Sc%3D/68x102/v2/https%3A//resizing.flixster.com/vnDZlLeBju-2g_Lyd8h-b8KskXU%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JiOTE1ZDVlLTBiZTgtNGRiZS1iYTM1LWNjOTZjN2FiMDQyMS5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/zIBTPyViguSmGj9m3On1z7Ak_Sc%3D/68x102/v2/https%3A//resizing.flixster.com/vnDZlLeBju-2g_Lyd8h-b8KskXU%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JiOTE1ZDVlLTBiZTgtNGRiZS1iYTM1LWNjOTZjN2FiMDQyMS5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Bad Apples</title>
@@ -26,7 +32,13 @@
         <img src="https://resizing.flixster.com/VksumbvbRyKgLy9V1LtWyexeYpw%3D/68x102/v2/https%3A//resizing.flixster.com/9jqAZehIF7x8pXndaVuujlxSYyA%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2EwYThjYTNjLWVjMTEtNGY1MS05MmE5LWMzOGZiMDVmOGE3ZC5qcGc%3D" alt="Poster for Bad Apples" />
         <p>Streaming date: Sep 18, 2026. Tomatometer: 83%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/VksumbvbRyKgLy9V1LtWyexeYpw%3D/68x102/v2/https%3A//resizing.flixster.com/9jqAZehIF7x8pXndaVuujlxSYyA%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2EwYThjYTNjLWVjMTEtNGY1MS05MmE5LWMzOGZiMDVmOGE3ZC5qcGc%3D" alt="Poster for Bad Apples" /></p>
+        <p>Streaming date: Sep 18, 2026. Tomatometer: 83%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/VksumbvbRyKgLy9V1LtWyexeYpw%3D/68x102/v2/https%3A//resizing.flixster.com/9jqAZehIF7x8pXndaVuujlxSYyA%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2EwYThjYTNjLWVjMTEtNGY1MS05MmE5LWMzOGZiMDVmOGE3ZC5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/VksumbvbRyKgLy9V1LtWyexeYpw%3D/68x102/v2/https%3A//resizing.flixster.com/9jqAZehIF7x8pXndaVuujlxSYyA%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2EwYThjYTNjLWVjMTEtNGY1MS05MmE5LWMzOGZiMDVmOGE3ZC5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/VksumbvbRyKgLy9V1LtWyexeYpw%3D/68x102/v2/https%3A//resizing.flixster.com/9jqAZehIF7x8pXndaVuujlxSYyA%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2EwYThjYTNjLWVjMTEtNGY1MS05MmE5LWMzOGZiMDVmOGE3ZC5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Run Hide Fight: Infidels</title>
@@ -37,7 +49,13 @@
         <img src="https://resizing.flixster.com/rj_rwV2OLP4Lz5ejgVjfdgZmfYw%3D/68x102/v2/https%3A//resizing.flixster.com/UZrTwrpcf69_ukQd6z0GWaHbiKg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc1OTZhODMyLTY2NTUtNDAzNC04ZDkyLTI1ZjhiNTRmYTQ0Yi5wbmc%3D" alt="Poster for Run Hide Fight: Infidels" />
         <p>Streaming date: Sep 16, 2026. Tomatometer: 82%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/rj_rwV2OLP4Lz5ejgVjfdgZmfYw%3D/68x102/v2/https%3A//resizing.flixster.com/UZrTwrpcf69_ukQd6z0GWaHbiKg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc1OTZhODMyLTY2NTUtNDAzNC04ZDkyLTI1ZjhiNTRmYTQ0Yi5wbmc%3D" alt="Poster for Run Hide Fight: Infidels" /></p>
+        <p>Streaming date: Sep 16, 2026. Tomatometer: 82%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/rj_rwV2OLP4Lz5ejgVjfdgZmfYw%3D/68x102/v2/https%3A//resizing.flixster.com/UZrTwrpcf69_ukQd6z0GWaHbiKg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc1OTZhODMyLTY2NTUtNDAzNC04ZDkyLTI1ZjhiNTRmYTQ0Yi5wbmc%3D" />
+      <media:content url="https://resizing.flixster.com/rj_rwV2OLP4Lz5ejgVjfdgZmfYw%3D/68x102/v2/https%3A//resizing.flixster.com/UZrTwrpcf69_ukQd6z0GWaHbiKg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc1OTZhODMyLTY2NTUtNDAzNC04ZDkyLTI1ZjhiNTRmYTQ0Yi5wbmc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/rj_rwV2OLP4Lz5ejgVjfdgZmfYw%3D/68x102/v2/https%3A//resizing.flixster.com/UZrTwrpcf69_ukQd6z0GWaHbiKg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc1OTZhODMyLTY2NTUtNDAzNC04ZDkyLTI1ZjhiNTRmYTQ0Yi5wbmc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Tony</title>
@@ -48,7 +66,13 @@
         <img src="https://resizing.flixster.com/KJzvFLRyO2GWrHn1XFjCl-CuPRU%3D/68x102/v2/https%3A//resizing.flixster.com/wkFWwoeNKmokBeBJkElVv2BzteI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgyNGRhNDYyLTQ1NTMtNGQ1OC04YTJiLTYxYzc0MGVlNDNjZS5qcGc%3D" alt="Poster for Tony" />
         <p>Streaming date: Sep 15, 2026. Tomatometer: 93%. Popcornmeter: 92%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/KJzvFLRyO2GWrHn1XFjCl-CuPRU%3D/68x102/v2/https%3A//resizing.flixster.com/wkFWwoeNKmokBeBJkElVv2BzteI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgyNGRhNDYyLTQ1NTMtNGQ1OC04YTJiLTYxYzc0MGVlNDNjZS5qcGc%3D" alt="Poster for Tony" /></p>
+        <p>Streaming date: Sep 15, 2026. Tomatometer: 93%. Popcornmeter: 92%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/KJzvFLRyO2GWrHn1XFjCl-CuPRU%3D/68x102/v2/https%3A//resizing.flixster.com/wkFWwoeNKmokBeBJkElVv2BzteI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgyNGRhNDYyLTQ1NTMtNGQ1OC04YTJiLTYxYzc0MGVlNDNjZS5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/KJzvFLRyO2GWrHn1XFjCl-CuPRU%3D/68x102/v2/https%3A//resizing.flixster.com/wkFWwoeNKmokBeBJkElVv2BzteI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgyNGRhNDYyLTQ1NTMtNGQ1OC04YTJiLTYxYzc0MGVlNDNjZS5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/KJzvFLRyO2GWrHn1XFjCl-CuPRU%3D/68x102/v2/https%3A//resizing.flixster.com/wkFWwoeNKmokBeBJkElVv2BzteI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgyNGRhNDYyLTQ1NTMtNGQ1OC04YTJiLTYxYzc0MGVlNDNjZS5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>The Rivals of Amziah King</title>
@@ -59,7 +83,13 @@
         <img src="https://resizing.flixster.com/lAYkVwkovdqz_vFVfY1CuftFRuU%3D/68x102/v2/https%3A//resizing.flixster.com/kwd25WT2oN7afpzU-v8gJOBQDds%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzUxZGU3N2VhLTVlZmItNDIzYi1iOWYwLTg5NTFlOTEyN2FlYi5qcGc%3D" alt="Poster for The Rivals of Amziah King" />
         <p>Streaming date: Sep 15, 2026. Tomatometer: 89%. Popcornmeter: 81%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/lAYkVwkovdqz_vFVfY1CuftFRuU%3D/68x102/v2/https%3A//resizing.flixster.com/kwd25WT2oN7afpzU-v8gJOBQDds%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzUxZGU3N2VhLTVlZmItNDIzYi1iOWYwLTg5NTFlOTEyN2FlYi5qcGc%3D" alt="Poster for The Rivals of Amziah King" /></p>
+        <p>Streaming date: Sep 15, 2026. Tomatometer: 89%. Popcornmeter: 81%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/lAYkVwkovdqz_vFVfY1CuftFRuU%3D/68x102/v2/https%3A//resizing.flixster.com/kwd25WT2oN7afpzU-v8gJOBQDds%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzUxZGU3N2VhLTVlZmItNDIzYi1iOWYwLTg5NTFlOTEyN2FlYi5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/lAYkVwkovdqz_vFVfY1CuftFRuU%3D/68x102/v2/https%3A//resizing.flixster.com/kwd25WT2oN7afpzU-v8gJOBQDds%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzUxZGU3N2VhLTVlZmItNDIzYi1iOWYwLTg5NTFlOTEyN2FlYi5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/lAYkVwkovdqz_vFVfY1CuftFRuU%3D/68x102/v2/https%3A//resizing.flixster.com/kwd25WT2oN7afpzU-v8gJOBQDds%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzUxZGU3N2VhLTVlZmItNDIzYi1iOWYwLTg5NTFlOTEyN2FlYi5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>The End of Oak Street</title>
@@ -70,7 +100,13 @@
         <img src="https://resizing.flixster.com/KOxyH1E0dh6t_y1oxXpzd0RxkJ0%3D/68x102/v2/https%3A//resizing.flixster.com/mh5WwBB4gOPvlxaLkoz6aYdsisg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzllNzkxYjJhLWEyNTgtNDNlNS1iZGM5LWQyOTU4ZGQ0YWI4MC5qcGc%3D" alt="Poster for The End of Oak Street" />
         <p>Streaming date: Sep 15, 2026. Tomatometer: 86%. Popcornmeter: 76%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/KOxyH1E0dh6t_y1oxXpzd0RxkJ0%3D/68x102/v2/https%3A//resizing.flixster.com/mh5WwBB4gOPvlxaLkoz6aYdsisg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzllNzkxYjJhLWEyNTgtNDNlNS1iZGM5LWQyOTU4ZGQ0YWI4MC5qcGc%3D" alt="Poster for The End of Oak Street" /></p>
+        <p>Streaming date: Sep 15, 2026. Tomatometer: 86%. Popcornmeter: 76%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/KOxyH1E0dh6t_y1oxXpzd0RxkJ0%3D/68x102/v2/https%3A//resizing.flixster.com/mh5WwBB4gOPvlxaLkoz6aYdsisg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzllNzkxYjJhLWEyNTgtNDNlNS1iZGM5LWQyOTU4ZGQ0YWI4MC5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/KOxyH1E0dh6t_y1oxXpzd0RxkJ0%3D/68x102/v2/https%3A//resizing.flixster.com/mh5WwBB4gOPvlxaLkoz6aYdsisg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzllNzkxYjJhLWEyNTgtNDNlNS1iZGM5LWQyOTU4ZGQ0YWI4MC5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/KOxyH1E0dh6t_y1oxXpzd0RxkJ0%3D/68x102/v2/https%3A//resizing.flixster.com/mh5WwBB4gOPvlxaLkoz6aYdsisg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzllNzkxYjJhLWEyNTgtNDNlNS1iZGM5LWQyOTU4ZGQ0YWI4MC5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>It Ends</title>
@@ -81,7 +117,13 @@
         <img src="https://resizing.flixster.com/IXc9G9M9Q04qrRjdy4mrDL-r2rk%3D/68x102/v2/https%3A//resizing.flixster.com/2Y2jAhHlGyrCZ9D-pLFR88ltJjI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQzNGU1YzQ3LTI2ZWItNDAzMC1hMGE1LTZjNTFkZjFjMTA2NS5qcGc%3D" alt="Poster for It Ends" />
         <p>Streaming date: Sep 15, 2026. Tomatometer: 93%. Popcornmeter: 59%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/IXc9G9M9Q04qrRjdy4mrDL-r2rk%3D/68x102/v2/https%3A//resizing.flixster.com/2Y2jAhHlGyrCZ9D-pLFR88ltJjI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQzNGU1YzQ3LTI2ZWItNDAzMC1hMGE1LTZjNTFkZjFjMTA2NS5qcGc%3D" alt="Poster for It Ends" /></p>
+        <p>Streaming date: Sep 15, 2026. Tomatometer: 93%. Popcornmeter: 59%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/IXc9G9M9Q04qrRjdy4mrDL-r2rk%3D/68x102/v2/https%3A//resizing.flixster.com/2Y2jAhHlGyrCZ9D-pLFR88ltJjI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQzNGU1YzQ3LTI2ZWItNDAzMC1hMGE1LTZjNTFkZjFjMTA2NS5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/IXc9G9M9Q04qrRjdy4mrDL-r2rk%3D/68x102/v2/https%3A//resizing.flixster.com/2Y2jAhHlGyrCZ9D-pLFR88ltJjI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQzNGU1YzQ3LTI2ZWItNDAzMC1hMGE1LTZjNTFkZjFjMTA2NS5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/IXc9G9M9Q04qrRjdy4mrDL-r2rk%3D/68x102/v2/https%3A//resizing.flixster.com/2Y2jAhHlGyrCZ9D-pLFR88ltJjI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQzNGU1YzQ3LTI2ZWItNDAzMC1hMGE1LTZjNTFkZjFjMTA2NS5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Finding Emily</title>
@@ -92,7 +134,13 @@
         <img src="https://resizing.flixster.com/0igj3wrzr2q7F_rt-l3o3UxBZNk%3D/68x102/v2/https%3A//resizing.flixster.com/_65i0zmhB_DSR02MXNu6scg5oEI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk1YTk3MTQ3LTFjY2ItNDQzMC05MjczLWM0ZmI1YTYzNWI4OC5qcGc%3D" alt="Poster for Finding Emily" />
         <p>Streaming date: Sep 15, 2026. Tomatometer: 89%. Popcornmeter: 90%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/0igj3wrzr2q7F_rt-l3o3UxBZNk%3D/68x102/v2/https%3A//resizing.flixster.com/_65i0zmhB_DSR02MXNu6scg5oEI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk1YTk3MTQ3LTFjY2ItNDQzMC05MjczLWM0ZmI1YTYzNWI4OC5qcGc%3D" alt="Poster for Finding Emily" /></p>
+        <p>Streaming date: Sep 15, 2026. Tomatometer: 89%. Popcornmeter: 90%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/0igj3wrzr2q7F_rt-l3o3UxBZNk%3D/68x102/v2/https%3A//resizing.flixster.com/_65i0zmhB_DSR02MXNu6scg5oEI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk1YTk3MTQ3LTFjY2ItNDQzMC05MjczLWM0ZmI1YTYzNWI4OC5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/0igj3wrzr2q7F_rt-l3o3UxBZNk%3D/68x102/v2/https%3A//resizing.flixster.com/_65i0zmhB_DSR02MXNu6scg5oEI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk1YTk3MTQ3LTFjY2ItNDQzMC05MjczLWM0ZmI1YTYzNWI4OC5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/0igj3wrzr2q7F_rt-l3o3UxBZNk%3D/68x102/v2/https%3A//resizing.flixster.com/_65i0zmhB_DSR02MXNu6scg5oEI%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk1YTk3MTQ3LTFjY2ItNDQzMC05MjczLWM0ZmI1YTYzNWI4OC5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Mayday</title>
@@ -103,7 +151,13 @@
         <img src="https://resizing.flixster.com/Hp7EpGhirNMqD8GLZBDSgc86EBc%3D/68x102/v2/https%3A//resizing.flixster.com/hj7aBY7gs2H7icgJ4ym5t7FaczY%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U1NTMwYjBhLTI1NmItNDc4MS04ZDNhLWZmNjE1ODNjMTk2MC5wbmc%3D" alt="Poster for Mayday" />
         <p>Streaming date: Sep 4, 2026. Tomatometer: 82%. Popcornmeter: 67%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/Hp7EpGhirNMqD8GLZBDSgc86EBc%3D/68x102/v2/https%3A//resizing.flixster.com/hj7aBY7gs2H7icgJ4ym5t7FaczY%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U1NTMwYjBhLTI1NmItNDc4MS04ZDNhLWZmNjE1ODNjMTk2MC5wbmc%3D" alt="Poster for Mayday" /></p>
+        <p>Streaming date: Sep 4, 2026. Tomatometer: 82%. Popcornmeter: 67%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/Hp7EpGhirNMqD8GLZBDSgc86EBc%3D/68x102/v2/https%3A//resizing.flixster.com/hj7aBY7gs2H7icgJ4ym5t7FaczY%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U1NTMwYjBhLTI1NmItNDc4MS04ZDNhLWZmNjE1ODNjMTk2MC5wbmc%3D" />
+      <media:content url="https://resizing.flixster.com/Hp7EpGhirNMqD8GLZBDSgc86EBc%3D/68x102/v2/https%3A//resizing.flixster.com/hj7aBY7gs2H7icgJ4ym5t7FaczY%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U1NTMwYjBhLTI1NmItNDc4MS04ZDNhLWZmNjE1ODNjMTk2MC5wbmc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/Hp7EpGhirNMqD8GLZBDSgc86EBc%3D/68x102/v2/https%3A//resizing.flixster.com/hj7aBY7gs2H7icgJ4ym5t7FaczY%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U1NTMwYjBhLTI1NmItNDc4MS04ZDNhLWZmNjE1ODNjMTk2MC5wbmc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>The Runner</title>
@@ -114,7 +168,13 @@
         <img src="https://resizing.flixster.com/dxw-ZybpE5MjdgADScH7TBld-pM%3D/68x102/v2/https%3A//resizing.flixster.com/5-eZZLMgF_WTaGCjz-Z5TNmkvCM%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRjMWFlNzRiLTJlNGUtNDkzNS04NzM0LTkwMTg3MjQ4YmY5ZS5qcGc%3D" alt="Poster for The Runner" />
         <p>Streaming date: Sep 2, 2026. Tomatometer: 9%. Popcornmeter: 31%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/dxw-ZybpE5MjdgADScH7TBld-pM%3D/68x102/v2/https%3A//resizing.flixster.com/5-eZZLMgF_WTaGCjz-Z5TNmkvCM%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRjMWFlNzRiLTJlNGUtNDkzNS04NzM0LTkwMTg3MjQ4YmY5ZS5qcGc%3D" alt="Poster for The Runner" /></p>
+        <p>Streaming date: Sep 2, 2026. Tomatometer: 9%. Popcornmeter: 31%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/dxw-ZybpE5MjdgADScH7TBld-pM%3D/68x102/v2/https%3A//resizing.flixster.com/5-eZZLMgF_WTaGCjz-Z5TNmkvCM%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRjMWFlNzRiLTJlNGUtNDkzNS04NzM0LTkwMTg3MjQ4YmY5ZS5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/dxw-ZybpE5MjdgADScH7TBld-pM%3D/68x102/v2/https%3A//resizing.flixster.com/5-eZZLMgF_WTaGCjz-Z5TNmkvCM%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRjMWFlNzRiLTJlNGUtNDkzNS04NzM0LTkwMTg3MjQ4YmY5ZS5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/dxw-ZybpE5MjdgADScH7TBld-pM%3D/68x102/v2/https%3A//resizing.flixster.com/5-eZZLMgF_WTaGCjz-Z5TNmkvCM%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRjMWFlNzRiLTJlNGUtNDkzNS04NzM0LTkwMTg3MjQ4YmY5ZS5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>I Want Your Sex</title>
@@ -125,7 +185,13 @@
         <img src="https://resizing.flixster.com/6P9MmlzLkVBI9LOYnr4J6CO7uxc%3D/68x102/v2/https%3A//resizing.flixster.com/fArozlChMxf5nY6-Ey0bvc32ig0%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JlYjVjMmQ1LTc2YTQtNDBhNC04NzJhLWE2OWEwOTYyYWVkZi5qcGc%3D" alt="Poster for I Want Your Sex" />
         <p>Streaming date: Sep 1, 2026. Tomatometer: 92%. Popcornmeter: 64%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/6P9MmlzLkVBI9LOYnr4J6CO7uxc%3D/68x102/v2/https%3A//resizing.flixster.com/fArozlChMxf5nY6-Ey0bvc32ig0%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JlYjVjMmQ1LTc2YTQtNDBhNC04NzJhLWE2OWEwOTYyYWVkZi5qcGc%3D" alt="Poster for I Want Your Sex" /></p>
+        <p>Streaming date: Sep 1, 2026. Tomatometer: 92%. Popcornmeter: 64%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/6P9MmlzLkVBI9LOYnr4J6CO7uxc%3D/68x102/v2/https%3A//resizing.flixster.com/fArozlChMxf5nY6-Ey0bvc32ig0%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JlYjVjMmQ1LTc2YTQtNDBhNC04NzJhLWE2OWEwOTYyYWVkZi5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/6P9MmlzLkVBI9LOYnr4J6CO7uxc%3D/68x102/v2/https%3A//resizing.flixster.com/fArozlChMxf5nY6-Ey0bvc32ig0%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JlYjVjMmQ1LTc2YTQtNDBhNC04NzJhLWE2OWEwOTYyYWVkZi5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/6P9MmlzLkVBI9LOYnr4J6CO7uxc%3D/68x102/v2/https%3A//resizing.flixster.com/fArozlChMxf5nY6-Ey0bvc32ig0%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JlYjVjMmQ1LTc2YTQtNDBhNC04NzJhLWE2OWEwOTYyYWVkZi5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>The Whisper Man</title>
@@ -136,7 +202,13 @@
         <img src="https://resizing.flixster.com/tnZSs8nRFSG29IGTjr7lg_aKjvI%3D/68x102/v2/https%3A//resizing.flixster.com/mja7Ysu-azmAVjRt9xlUjVA9bQg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzU5NjJmMTQwLWRmYmMtNGNjMC04YWI4LTQyOGQxMTc3NWU0YS5qcGc%3D" alt="Poster for The Whisper Man" />
         <p>Streaming date: Aug 28, 2026. Tomatometer: 46%. Popcornmeter: 37%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/tnZSs8nRFSG29IGTjr7lg_aKjvI%3D/68x102/v2/https%3A//resizing.flixster.com/mja7Ysu-azmAVjRt9xlUjVA9bQg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzU5NjJmMTQwLWRmYmMtNGNjMC04YWI4LTQyOGQxMTc3NWU0YS5qcGc%3D" alt="Poster for The Whisper Man" /></p>
+        <p>Streaming date: Aug 28, 2026. Tomatometer: 46%. Popcornmeter: 37%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/tnZSs8nRFSG29IGTjr7lg_aKjvI%3D/68x102/v2/https%3A//resizing.flixster.com/mja7Ysu-azmAVjRt9xlUjVA9bQg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzU5NjJmMTQwLWRmYmMtNGNjMC04YWI4LTQyOGQxMTc3NWU0YS5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/tnZSs8nRFSG29IGTjr7lg_aKjvI%3D/68x102/v2/https%3A//resizing.flixster.com/mja7Ysu-azmAVjRt9xlUjVA9bQg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzU5NjJmMTQwLWRmYmMtNGNjMC04YWI4LTQyOGQxMTc3NWU0YS5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/tnZSs8nRFSG29IGTjr7lg_aKjvI%3D/68x102/v2/https%3A//resizing.flixster.com/mja7Ysu-azmAVjRt9xlUjVA9bQg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzU5NjJmMTQwLWRmYmMtNGNjMC04YWI4LTQyOGQxMTc3NWU0YS5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Don&apos;t Say Good Luck</title>
@@ -147,7 +219,13 @@
         <img src="https://resizing.flixster.com/lrpr9K-yWt1dase5AHEDnh0bluY%3D/68x102/v2/https%3A//resizing.flixster.com/iHzKLp-xfq7_sqg4l1s-z2PTNuQ%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2E2ZGIxZTA5LTZiMGMtNDFmYi1iNDAwLWU4N2E3MDQyOTMyYS5qcGc%3D" alt="Poster for Don&apos;t Say Good Luck" />
         <p>Streaming date: Aug 14, 2026. Tomatometer: 93%. Popcornmeter: 80%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/lrpr9K-yWt1dase5AHEDnh0bluY%3D/68x102/v2/https%3A//resizing.flixster.com/iHzKLp-xfq7_sqg4l1s-z2PTNuQ%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2E2ZGIxZTA5LTZiMGMtNDFmYi1iNDAwLWU4N2E3MDQyOTMyYS5qcGc%3D" alt="Poster for Don&apos;t Say Good Luck" /></p>
+        <p>Streaming date: Aug 14, 2026. Tomatometer: 93%. Popcornmeter: 80%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/lrpr9K-yWt1dase5AHEDnh0bluY%3D/68x102/v2/https%3A//resizing.flixster.com/iHzKLp-xfq7_sqg4l1s-z2PTNuQ%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2E2ZGIxZTA5LTZiMGMtNDFmYi1iNDAwLWU4N2E3MDQyOTMyYS5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/lrpr9K-yWt1dase5AHEDnh0bluY%3D/68x102/v2/https%3A//resizing.flixster.com/iHzKLp-xfq7_sqg4l1s-z2PTNuQ%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2E2ZGIxZTA5LTZiMGMtNDFmYi1iNDAwLWU4N2E3MDQyOTMyYS5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/lrpr9K-yWt1dase5AHEDnh0bluY%3D/68x102/v2/https%3A//resizing.flixster.com/iHzKLp-xfq7_sqg4l1s-z2PTNuQ%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2E2ZGIxZTA5LTZiMGMtNDFmYi1iNDAwLWU4N2E3MDQyOTMyYS5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>The Invite</title>
@@ -158,7 +236,13 @@
         <img src="https://resizing.flixster.com/A7pLMoTbFsHnU41MikSQ4J3jcuY%3D/68x102/v2/https%3A//resizing.flixster.com/oQP7j5g3mdXhrPzuVM1Kt5yKNbo%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzMyM2E1MzNiLWJjYzgtNDQ1MC05M2Q0LTY2NWJmM2IyYjk4ZC5qcGc%3D" alt="Poster for The Invite" />
         <p>Streaming date: Aug 11, 2026. Tomatometer: 96%. Popcornmeter: 89%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/A7pLMoTbFsHnU41MikSQ4J3jcuY%3D/68x102/v2/https%3A//resizing.flixster.com/oQP7j5g3mdXhrPzuVM1Kt5yKNbo%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzMyM2E1MzNiLWJjYzgtNDQ1MC05M2Q0LTY2NWJmM2IyYjk4ZC5qcGc%3D" alt="Poster for The Invite" /></p>
+        <p>Streaming date: Aug 11, 2026. Tomatometer: 96%. Popcornmeter: 89%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/A7pLMoTbFsHnU41MikSQ4J3jcuY%3D/68x102/v2/https%3A//resizing.flixster.com/oQP7j5g3mdXhrPzuVM1Kt5yKNbo%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzMyM2E1MzNiLWJjYzgtNDQ1MC05M2Q0LTY2NWJmM2IyYjk4ZC5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/A7pLMoTbFsHnU41MikSQ4J3jcuY%3D/68x102/v2/https%3A//resizing.flixster.com/oQP7j5g3mdXhrPzuVM1Kt5yKNbo%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzMyM2E1MzNiLWJjYzgtNDQ1MC05M2Q0LTY2NWJmM2IyYjk4ZC5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/A7pLMoTbFsHnU41MikSQ4J3jcuY%3D/68x102/v2/https%3A//resizing.flixster.com/oQP7j5g3mdXhrPzuVM1Kt5yKNbo%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzMyM2E1MzNiLWJjYzgtNDQ1MC05M2Q0LTY2NWJmM2IyYjk4ZC5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Supergirl</title>
@@ -169,7 +253,13 @@
         <img src="https://resizing.flixster.com/zs9igxCvYgilPLCoUfNj_ufNdoM%3D/68x102/v2/https%3A//resizing.flixster.com/UXVL_9q6taCUdkwweK7tn3PYOB0%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk0MDhlMTk4LWE3OWYtNGYwNy05N2I2LTU3NTYxODI1MmQzOC5qcGc%3D" alt="Poster for Supergirl" />
         <p>Streaming date: Jul 28, 2026. Tomatometer: 53%. Popcornmeter: 72%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/zs9igxCvYgilPLCoUfNj_ufNdoM%3D/68x102/v2/https%3A//resizing.flixster.com/UXVL_9q6taCUdkwweK7tn3PYOB0%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk0MDhlMTk4LWE3OWYtNGYwNy05N2I2LTU3NTYxODI1MmQzOC5qcGc%3D" alt="Poster for Supergirl" /></p>
+        <p>Streaming date: Jul 28, 2026. Tomatometer: 53%. Popcornmeter: 72%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/zs9igxCvYgilPLCoUfNj_ufNdoM%3D/68x102/v2/https%3A//resizing.flixster.com/UXVL_9q6taCUdkwweK7tn3PYOB0%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk0MDhlMTk4LWE3OWYtNGYwNy05N2I2LTU3NTYxODI1MmQzOC5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/zs9igxCvYgilPLCoUfNj_ufNdoM%3D/68x102/v2/https%3A//resizing.flixster.com/UXVL_9q6taCUdkwweK7tn3PYOB0%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk0MDhlMTk4LWE3OWYtNGYwNy05N2I2LTU3NTYxODI1MmQzOC5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/zs9igxCvYgilPLCoUfNj_ufNdoM%3D/68x102/v2/https%3A//resizing.flixster.com/UXVL_9q6taCUdkwweK7tn3PYOB0%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk0MDhlMTk4LWE3OWYtNGYwNy05N2I2LTU3NTYxODI1MmQzOC5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Disclosure Day</title>
@@ -180,7 +270,13 @@
         <img src="https://resizing.flixster.com/Moxt6NgNkk2UAqcEqCZzNVBFFkc%3D/68x102/v2/https%3A//resizing.flixster.com/4W2dp7l4CLYenE1qkQ-HHjqO51w%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZkYjVlMzFiLTA2NDItNDk4OC1hZGI5LWQyOTY4YTJjZGQ5Mi5qcGc%3D" alt="Poster for Disclosure Day" />
         <p>Streaming date: Jul 21, 2026. Tomatometer: 79%. Popcornmeter: 69%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/Moxt6NgNkk2UAqcEqCZzNVBFFkc%3D/68x102/v2/https%3A//resizing.flixster.com/4W2dp7l4CLYenE1qkQ-HHjqO51w%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZkYjVlMzFiLTA2NDItNDk4OC1hZGI5LWQyOTY4YTJjZGQ5Mi5qcGc%3D" alt="Poster for Disclosure Day" /></p>
+        <p>Streaming date: Jul 21, 2026. Tomatometer: 79%. Popcornmeter: 69%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/Moxt6NgNkk2UAqcEqCZzNVBFFkc%3D/68x102/v2/https%3A//resizing.flixster.com/4W2dp7l4CLYenE1qkQ-HHjqO51w%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZkYjVlMzFiLTA2NDItNDk4OC1hZGI5LWQyOTY4YTJjZGQ5Mi5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/Moxt6NgNkk2UAqcEqCZzNVBFFkc%3D/68x102/v2/https%3A//resizing.flixster.com/4W2dp7l4CLYenE1qkQ-HHjqO51w%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZkYjVlMzFiLTA2NDItNDk4OC1hZGI5LWQyOTY4YTJjZGQ5Mi5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/Moxt6NgNkk2UAqcEqCZzNVBFFkc%3D/68x102/v2/https%3A//resizing.flixster.com/4W2dp7l4CLYenE1qkQ-HHjqO51w%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZkYjVlMzFiLTA2NDItNDk4OC1hZGI5LWQyOTY4YTJjZGQ5Mi5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Backrooms</title>
@@ -191,7 +287,13 @@
         <img src="https://resizing.flixster.com/5TyliY_d-m854wBFq9rzlvjXYvI%3D/68x102/v2/https%3A//resizing.flixster.com/rhgxSrAD0DJLjAa7CXGBQU5h81E%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U3YzFlM2U0LWM1NzctNDg5Yy05M2Y4LTVmYWYxOTQyMDEyMy5qcGc%3D" alt="Poster for Backrooms" />
         <p>Streaming date: Jul 14, 2026. Tomatometer: 86%. Popcornmeter: 74%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/5TyliY_d-m854wBFq9rzlvjXYvI%3D/68x102/v2/https%3A//resizing.flixster.com/rhgxSrAD0DJLjAa7CXGBQU5h81E%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U3YzFlM2U0LWM1NzctNDg5Yy05M2Y4LTVmYWYxOTQyMDEyMy5qcGc%3D" alt="Poster for Backrooms" /></p>
+        <p>Streaming date: Jul 14, 2026. Tomatometer: 86%. Popcornmeter: 74%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/5TyliY_d-m854wBFq9rzlvjXYvI%3D/68x102/v2/https%3A//resizing.flixster.com/rhgxSrAD0DJLjAa7CXGBQU5h81E%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U3YzFlM2U0LWM1NzctNDg5Yy05M2Y4LTVmYWYxOTQyMDEyMy5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/5TyliY_d-m854wBFq9rzlvjXYvI%3D/68x102/v2/https%3A//resizing.flixster.com/rhgxSrAD0DJLjAa7CXGBQU5h81E%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U3YzFlM2U0LWM1NzctNDg5Yy05M2Y4LTVmYWYxOTQyMDEyMy5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/5TyliY_d-m854wBFq9rzlvjXYvI%3D/68x102/v2/https%3A//resizing.flixster.com/rhgxSrAD0DJLjAa7CXGBQU5h81E%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U3YzFlM2U0LWM1NzctNDg5Yy05M2Y4LTVmYWYxOTQyMDEyMy5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Obsession</title>
@@ -202,7 +304,13 @@
         <img src="https://resizing.flixster.com/ZO8BttxEja5hOF0pnYTVaYVUeeM%3D/68x102/v2/https%3A//resizing.flixster.com/wciPMzUm5zbBhWKN24eGdoRfK8I%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzBlZDNhZmI5LTM3N2EtNGIyZC1iZTA5LTU0NzUyY2M2ZGYyYi5qcGc%3D" alt="Poster for Obsession" />
         <p>Streaming date: Jun 30, 2026. Tomatometer: 93%. Popcornmeter: 94%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/ZO8BttxEja5hOF0pnYTVaYVUeeM%3D/68x102/v2/https%3A//resizing.flixster.com/wciPMzUm5zbBhWKN24eGdoRfK8I%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzBlZDNhZmI5LTM3N2EtNGIyZC1iZTA5LTU0NzUyY2M2ZGYyYi5qcGc%3D" alt="Poster for Obsession" /></p>
+        <p>Streaming date: Jun 30, 2026. Tomatometer: 93%. Popcornmeter: 94%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/ZO8BttxEja5hOF0pnYTVaYVUeeM%3D/68x102/v2/https%3A//resizing.flixster.com/wciPMzUm5zbBhWKN24eGdoRfK8I%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzBlZDNhZmI5LTM3N2EtNGIyZC1iZTA5LTU0NzUyY2M2ZGYyYi5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/ZO8BttxEja5hOF0pnYTVaYVUeeM%3D/68x102/v2/https%3A//resizing.flixster.com/wciPMzUm5zbBhWKN24eGdoRfK8I%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzBlZDNhZmI5LTM3N2EtNGIyZC1iZTA5LTU0NzUyY2M2ZGYyYi5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/ZO8BttxEja5hOF0pnYTVaYVUeeM%3D/68x102/v2/https%3A//resizing.flixster.com/wciPMzUm5zbBhWKN24eGdoRfK8I%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzBlZDNhZmI5LTM3N2EtNGIyZC1iZTA5LTU0NzUyY2M2ZGYyYi5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Pressure</title>
@@ -213,7 +321,13 @@
         <img src="https://resizing.flixster.com/GI8vT1IC2wh48WIxTdxUrvrxFDA%3D/68x102/v2/https%3A//resizing.flixster.com/vSoBhL9C3wLF2sF4vN6nFkkT6RE%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk2MTViZTc0LWM4MWQtNDYyYi05MWJkLWJjY2E2YWMwYThkYi5qcGc%3D" alt="Poster for Pressure" />
         <p>Streaming date: Jun 16, 2026. Tomatometer: 89%. Popcornmeter: 95%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/GI8vT1IC2wh48WIxTdxUrvrxFDA%3D/68x102/v2/https%3A//resizing.flixster.com/vSoBhL9C3wLF2sF4vN6nFkkT6RE%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk2MTViZTc0LWM4MWQtNDYyYi05MWJkLWJjY2E2YWMwYThkYi5qcGc%3D" alt="Poster for Pressure" /></p>
+        <p>Streaming date: Jun 16, 2026. Tomatometer: 89%. Popcornmeter: 95%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/GI8vT1IC2wh48WIxTdxUrvrxFDA%3D/68x102/v2/https%3A//resizing.flixster.com/vSoBhL9C3wLF2sF4vN6nFkkT6RE%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk2MTViZTc0LWM4MWQtNDYyYi05MWJkLWJjY2E2YWMwYThkYi5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/GI8vT1IC2wh48WIxTdxUrvrxFDA%3D/68x102/v2/https%3A//resizing.flixster.com/vSoBhL9C3wLF2sF4vN6nFkkT6RE%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk2MTViZTc0LWM4MWQtNDYyYi05MWJkLWJjY2E2YWMwYThkYi5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/GI8vT1IC2wh48WIxTdxUrvrxFDA%3D/68x102/v2/https%3A//resizing.flixster.com/vSoBhL9C3wLF2sF4vN6nFkkT6RE%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk2MTViZTc0LWM4MWQtNDYyYi05MWJkLWJjY2E2YWMwYThkYi5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Blue Film</title>
@@ -224,7 +338,13 @@
         <img src="https://resizing.flixster.com/fcY5hi0RJZHE9kunEczZr-IAhuk%3D/68x102/v2/https%3A//resizing.flixster.com/Gw1sWR0Squ6arM2_-aiQ_xgVank%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzEzMDVjOWRmLTAzOTctNGFmYy05NjVkLTAzMDc0YjQ3MTg3My5qcGc%3D" alt="Poster for Blue Film" />
         <p>Streaming date: Jun 12, 2026. Tomatometer: 91%. Popcornmeter: 67%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/fcY5hi0RJZHE9kunEczZr-IAhuk%3D/68x102/v2/https%3A//resizing.flixster.com/Gw1sWR0Squ6arM2_-aiQ_xgVank%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzEzMDVjOWRmLTAzOTctNGFmYy05NjVkLTAzMDc0YjQ3MTg3My5qcGc%3D" alt="Poster for Blue Film" /></p>
+        <p>Streaming date: Jun 12, 2026. Tomatometer: 91%. Popcornmeter: 67%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/fcY5hi0RJZHE9kunEczZr-IAhuk%3D/68x102/v2/https%3A//resizing.flixster.com/Gw1sWR0Squ6arM2_-aiQ_xgVank%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzEzMDVjOWRmLTAzOTctNGFmYy05NjVkLTAzMDc0YjQ3MTg3My5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/fcY5hi0RJZHE9kunEczZr-IAhuk%3D/68x102/v2/https%3A//resizing.flixster.com/Gw1sWR0Squ6arM2_-aiQ_xgVank%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzEzMDVjOWRmLTAzOTctNGFmYy05NjVkLTAzMDc0YjQ3MTg3My5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/fcY5hi0RJZHE9kunEczZr-IAhuk%3D/68x102/v2/https%3A//resizing.flixster.com/Gw1sWR0Squ6arM2_-aiQ_xgVank%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzEzMDVjOWRmLTAzOTctNGFmYy05NjVkLTAzMDc0YjQ3MTg3My5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>In the Grey</title>
@@ -235,7 +355,13 @@
         <img src="https://resizing.flixster.com/gt-2mPOww4oT02LjCwhiywzAPt4%3D/68x102/v2/https%3A//resizing.flixster.com/MQKj963XitS8YuBaSb0Xw2QcR-Q%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzVkMmVjMDgyLTRkMzItNDExNS1hMTlkLWYwYWVmYmU5YTljYS5wbmc%3D" alt="Poster for In the Grey" />
         <p>Streaming date: Jun 2, 2026. Tomatometer: 51%. Popcornmeter: 82%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/gt-2mPOww4oT02LjCwhiywzAPt4%3D/68x102/v2/https%3A//resizing.flixster.com/MQKj963XitS8YuBaSb0Xw2QcR-Q%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzVkMmVjMDgyLTRkMzItNDExNS1hMTlkLWYwYWVmYmU5YTljYS5wbmc%3D" alt="Poster for In the Grey" /></p>
+        <p>Streaming date: Jun 2, 2026. Tomatometer: 51%. Popcornmeter: 82%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/gt-2mPOww4oT02LjCwhiywzAPt4%3D/68x102/v2/https%3A//resizing.flixster.com/MQKj963XitS8YuBaSb0Xw2QcR-Q%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzVkMmVjMDgyLTRkMzItNDExNS1hMTlkLWYwYWVmYmU5YTljYS5wbmc%3D" />
+      <media:content url="https://resizing.flixster.com/gt-2mPOww4oT02LjCwhiywzAPt4%3D/68x102/v2/https%3A//resizing.flixster.com/MQKj963XitS8YuBaSb0Xw2QcR-Q%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzVkMmVjMDgyLTRkMzItNDExNS1hMTlkLWYwYWVmYmU5YTljYS5wbmc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/gt-2mPOww4oT02LjCwhiywzAPt4%3D/68x102/v2/https%3A//resizing.flixster.com/MQKj963XitS8YuBaSb0Xw2QcR-Q%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzVkMmVjMDgyLTRkMzItNDExNS1hMTlkLWYwYWVmYmU5YTljYS5wbmc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Hokum</title>
@@ -246,7 +372,13 @@
         <img src="https://resizing.flixster.com/LJS95Sx4CZt5Xeb9XiZZZYB-I54%3D/68x102/v2/https%3A//resizing.flixster.com/jRvqYBpvhPAKUPk2mY9cUsGwuRA%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2FhMzRlOTkxLWI4MmUtNDcxOS1hYWI2LWU3OGQ4NGNhYjdkMS5qcGc%3D" alt="Poster for Hokum" />
         <p>Streaming date: Jun 2, 2026. Tomatometer: 90%. Popcornmeter: 82%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/LJS95Sx4CZt5Xeb9XiZZZYB-I54%3D/68x102/v2/https%3A//resizing.flixster.com/jRvqYBpvhPAKUPk2mY9cUsGwuRA%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2FhMzRlOTkxLWI4MmUtNDcxOS1hYWI2LWU3OGQ4NGNhYjdkMS5qcGc%3D" alt="Poster for Hokum" /></p>
+        <p>Streaming date: Jun 2, 2026. Tomatometer: 90%. Popcornmeter: 82%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/LJS95Sx4CZt5Xeb9XiZZZYB-I54%3D/68x102/v2/https%3A//resizing.flixster.com/jRvqYBpvhPAKUPk2mY9cUsGwuRA%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2FhMzRlOTkxLWI4MmUtNDcxOS1hYWI2LWU3OGQ4NGNhYjdkMS5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/LJS95Sx4CZt5Xeb9XiZZZYB-I54%3D/68x102/v2/https%3A//resizing.flixster.com/jRvqYBpvhPAKUPk2mY9cUsGwuRA%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2FhMzRlOTkxLWI4MmUtNDcxOS1hYWI2LWU3OGQ4NGNhYjdkMS5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/LJS95Sx4CZt5Xeb9XiZZZYB-I54%3D/68x102/v2/https%3A//resizing.flixster.com/jRvqYBpvhPAKUPk2mY9cUsGwuRA%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2FhMzRlOTkxLWI4MmUtNDcxOS1hYWI2LWU3OGQ4NGNhYjdkMS5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Lesbian Space Princess</title>
@@ -257,7 +389,13 @@
         <img src="https://resizing.flixster.com/8MhJVl0iSVvk_iArWLj2ZOG0R54%3D/68x102/v2/https%3A//resizing.flixster.com/UnEOeA-FgY9it6ckawEp7rXUX4k%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzY5MTM0NzAyLWUxNjUtNGJhMy05ZjBlLTNhMDg4YTI4MzJjNi5qcGc%3D" alt="Poster for Lesbian Space Princess" />
         <p>Streaming date: Nov 18, 2025. Tomatometer: 96%. Popcornmeter: 33%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/8MhJVl0iSVvk_iArWLj2ZOG0R54%3D/68x102/v2/https%3A//resizing.flixster.com/UnEOeA-FgY9it6ckawEp7rXUX4k%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzY5MTM0NzAyLWUxNjUtNGJhMy05ZjBlLTNhMDg4YTI4MzJjNi5qcGc%3D" alt="Poster for Lesbian Space Princess" /></p>
+        <p>Streaming date: Nov 18, 2025. Tomatometer: 96%. Popcornmeter: 33%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/8MhJVl0iSVvk_iArWLj2ZOG0R54%3D/68x102/v2/https%3A//resizing.flixster.com/UnEOeA-FgY9it6ckawEp7rXUX4k%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzY5MTM0NzAyLWUxNjUtNGJhMy05ZjBlLTNhMDg4YTI4MzJjNi5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/8MhJVl0iSVvk_iArWLj2ZOG0R54%3D/68x102/v2/https%3A//resizing.flixster.com/UnEOeA-FgY9it6ckawEp7rXUX4k%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzY5MTM0NzAyLWUxNjUtNGJhMy05ZjBlLTNhMDg4YTI4MzJjNi5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/8MhJVl0iSVvk_iArWLj2ZOG0R54%3D/68x102/v2/https%3A//resizing.flixster.com/UnEOeA-FgY9it6ckawEp7rXUX4k%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzY5MTM0NzAyLWUxNjUtNGJhMy05ZjBlLTNhMDg4YTI4MzJjNi5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>The Perfect Neighbor</title>
@@ -268,7 +406,13 @@
         <img src="https://resizing.flixster.com/PA5X9NPqc9jKSPeAfthgQ1h-Eao%3D/68x102/v2/https%3A//resizing.flixster.com/HrGLqcU2Vx7WAQXfc9ocxbLiKjg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQ2MmIzZTcwLTAyMmUtNDc4Ny1hNTQ0LTZkZGMyNGViNTBkNC5qcGc%3D" alt="Poster for The Perfect Neighbor" />
         <p>Streaming date: Oct 17, 2025. Tomatometer: 98%. Popcornmeter: 80%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/PA5X9NPqc9jKSPeAfthgQ1h-Eao%3D/68x102/v2/https%3A//resizing.flixster.com/HrGLqcU2Vx7WAQXfc9ocxbLiKjg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQ2MmIzZTcwLTAyMmUtNDc4Ny1hNTQ0LTZkZGMyNGViNTBkNC5qcGc%3D" alt="Poster for The Perfect Neighbor" /></p>
+        <p>Streaming date: Oct 17, 2025. Tomatometer: 98%. Popcornmeter: 80%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/PA5X9NPqc9jKSPeAfthgQ1h-Eao%3D/68x102/v2/https%3A//resizing.flixster.com/HrGLqcU2Vx7WAQXfc9ocxbLiKjg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQ2MmIzZTcwLTAyMmUtNDc4Ny1hNTQ0LTZkZGMyNGViNTBkNC5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/PA5X9NPqc9jKSPeAfthgQ1h-Eao%3D/68x102/v2/https%3A//resizing.flixster.com/HrGLqcU2Vx7WAQXfc9ocxbLiKjg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQ2MmIzZTcwLTAyMmUtNDc4Ny1hNTQ0LTZkZGMyNGViNTBkNC5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/PA5X9NPqc9jKSPeAfthgQ1h-Eao%3D/68x102/v2/https%3A//resizing.flixster.com/HrGLqcU2Vx7WAQXfc9ocxbLiKjg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQ2MmIzZTcwLTAyMmUtNDc4Ny1hNTQ0LTZkZGMyNGViNTBkNC5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Weapons</title>
@@ -279,7 +423,13 @@
         <img src="https://resizing.flixster.com/s2ptHZEUOfOmNvVqfSudUlUYxz4%3D/68x102/v2/https%3A//resizing.flixster.com/uaS9Buuct1GoHPTsNXIUBfvORbg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2YzY2U4OWM5LWUyNTctNDJmMy1hYTc3LTAwMDY5NjU0N2VjZS5qcGc%3D" alt="Poster for Weapons" />
         <p>Streaming date: Sep 9, 2025. Tomatometer: 93%. Popcornmeter: 85%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/s2ptHZEUOfOmNvVqfSudUlUYxz4%3D/68x102/v2/https%3A//resizing.flixster.com/uaS9Buuct1GoHPTsNXIUBfvORbg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2YzY2U4OWM5LWUyNTctNDJmMy1hYTc3LTAwMDY5NjU0N2VjZS5qcGc%3D" alt="Poster for Weapons" /></p>
+        <p>Streaming date: Sep 9, 2025. Tomatometer: 93%. Popcornmeter: 85%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/s2ptHZEUOfOmNvVqfSudUlUYxz4%3D/68x102/v2/https%3A//resizing.flixster.com/uaS9Buuct1GoHPTsNXIUBfvORbg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2YzY2U4OWM5LWUyNTctNDJmMy1hYTc3LTAwMDY5NjU0N2VjZS5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/s2ptHZEUOfOmNvVqfSudUlUYxz4%3D/68x102/v2/https%3A//resizing.flixster.com/uaS9Buuct1GoHPTsNXIUBfvORbg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2YzY2U4OWM5LWUyNTctNDJmMy1hYTc3LTAwMDY5NjU0N2VjZS5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/s2ptHZEUOfOmNvVqfSudUlUYxz4%3D/68x102/v2/https%3A//resizing.flixster.com/uaS9Buuct1GoHPTsNXIUBfvORbg%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2YzY2U4OWM5LWUyNTctNDJmMy1hYTc3LTAwMDY5NjU0N2VjZS5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>The Ministry of Ungentlemanly Warfare</title>
@@ -290,7 +440,13 @@
         <img src="https://resizing.flixster.com/1qo3sRjH5p2Nw--aVTKRFeUPVzc%3D/68x102/v2/https%3A//resizing.flixster.com/1eHwSs4Hsk8dmj_7g_HOVkw8x6U%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRiZTU3MTJhLTA4NjgtNDViYS05YTRlLWUzODcwMGExZWNlZC5qcGc%3D" alt="Poster for The Ministry of Ungentlemanly Warfare" />
         <p>Streaming date: May 10, 2024. Tomatometer: 68%. Popcornmeter: 91%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/1qo3sRjH5p2Nw--aVTKRFeUPVzc%3D/68x102/v2/https%3A//resizing.flixster.com/1eHwSs4Hsk8dmj_7g_HOVkw8x6U%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRiZTU3MTJhLTA4NjgtNDViYS05YTRlLWUzODcwMGExZWNlZC5qcGc%3D" alt="Poster for The Ministry of Ungentlemanly Warfare" /></p>
+        <p>Streaming date: May 10, 2024. Tomatometer: 68%. Popcornmeter: 91%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/1qo3sRjH5p2Nw--aVTKRFeUPVzc%3D/68x102/v2/https%3A//resizing.flixster.com/1eHwSs4Hsk8dmj_7g_HOVkw8x6U%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRiZTU3MTJhLTA4NjgtNDViYS05YTRlLWUzODcwMGExZWNlZC5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/1qo3sRjH5p2Nw--aVTKRFeUPVzc%3D/68x102/v2/https%3A//resizing.flixster.com/1eHwSs4Hsk8dmj_7g_HOVkw8x6U%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRiZTU3MTJhLTA4NjgtNDViYS05YTRlLWUzODcwMGExZWNlZC5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/1qo3sRjH5p2Nw--aVTKRFeUPVzc%3D/68x102/v2/https%3A//resizing.flixster.com/1eHwSs4Hsk8dmj_7g_HOVkw8x6U%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRiZTU3MTJhLTA4NjgtNDViYS05YTRlLWUzODcwMGExZWNlZC5qcGc%3D" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Resident Evil</title>
@@ -301,7 +457,13 @@
         <img src="https://resizing.flixster.com/ZNXKI8wOOrRbDlI6piUXdwBF0dI%3D/68x102/v2/https%3A//resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak%3D/v3/t/assets/p29625_p_v8_ag.jpg" alt="Poster for Resident Evil" />
         <p>Streaming date: Apr 16, 2012. Tomatometer: 36%. Popcornmeter: 67%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/ZNXKI8wOOrRbDlI6piUXdwBF0dI%3D/68x102/v2/https%3A//resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak%3D/v3/t/assets/p29625_p_v8_ag.jpg" alt="Poster for Resident Evil" /></p>
+        <p>Streaming date: Apr 16, 2012. Tomatometer: 36%. Popcornmeter: 67%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/ZNXKI8wOOrRbDlI6piUXdwBF0dI%3D/68x102/v2/https%3A//resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak%3D/v3/t/assets/p29625_p_v8_ag.jpg" />
+      <media:content url="https://resizing.flixster.com/ZNXKI8wOOrRbDlI6piUXdwBF0dI%3D/68x102/v2/https%3A//resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak%3D/v3/t/assets/p29625_p_v8_ag.jpg" medium="image" />
+      <enclosure url="https://resizing.flixster.com/ZNXKI8wOOrRbDlI6piUXdwBF0dI%3D/68x102/v2/https%3A//resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak%3D/v3/t/assets/p29625_p_v8_ag.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Practical Magic</title>
@@ -312,7 +474,13 @@
         <img src="https://resizing.flixster.com/DCwTqdrxI5fYp7u33nOwvtf3OTI%3D/68x102/v2/https%3A//resizing.flixster.com/gZ-mbUqzSSt2KyQ5-LouA5eI1vo%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZkYzU4ZGZkLTE5YjEtNGNmOC1iZDQ0LWM4NGI4NjA4ODgwZi5qcGc%3D" alt="Poster for Practical Magic" />
         <p>Streaming date: Sep 1, 2009. Tomatometer: 31%. Popcornmeter: 73%.</p>
       ]]></description>
+      <content:encoded><![CDATA[
+        <p><img src="https://resizing.flixster.com/DCwTqdrxI5fYp7u33nOwvtf3OTI%3D/68x102/v2/https%3A//resizing.flixster.com/gZ-mbUqzSSt2KyQ5-LouA5eI1vo%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZkYzU4ZGZkLTE5YjEtNGNmOC1iZDQ0LWM4NGI4NjA4ODgwZi5qcGc%3D" alt="Poster for Practical Magic" /></p>
+        <p>Streaming date: Sep 1, 2009. Tomatometer: 31%. Popcornmeter: 73%.</p>
+      ]]></content:encoded>
       <media:thumbnail url="https://resizing.flixster.com/DCwTqdrxI5fYp7u33nOwvtf3OTI%3D/68x102/v2/https%3A//resizing.flixster.com/gZ-mbUqzSSt2KyQ5-LouA5eI1vo%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZkYzU4ZGZkLTE5YjEtNGNmOC1iZDQ0LWM4NGI4NjA4ODgwZi5qcGc%3D" />
+      <media:content url="https://resizing.flixster.com/DCwTqdrxI5fYp7u33nOwvtf3OTI%3D/68x102/v2/https%3A//resizing.flixster.com/gZ-mbUqzSSt2KyQ5-LouA5eI1vo%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZkYzU4ZGZkLTE5YjEtNGNmOC1iZDQ0LWM4NGI4NjA4ODgwZi5qcGc%3D" medium="image" />
+      <enclosure url="https://resizing.flixster.com/DCwTqdrxI5fYp7u33nOwvtf3OTI%3D/68x102/v2/https%3A//resizing.flixster.com/gZ-mbUqzSSt2KyQ5-LouA5eI1vo%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZkYzU4ZGZkLTE5YjEtNGNmOC1iZDQ0LWM4NGI4NjA4ODgwZi5qcGc%3D" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
